@@ -1016,7 +1016,7 @@ ideas = {
 			}
 		}
 
-		religious_education = {
+		education_reform_n = {
 
 			allowed = {
 				always = yes
@@ -1035,7 +1035,7 @@ ideas = {
 			}
 		}
 
-		pan_islamism = {
+		bosnian_pride = {
 
 			allowed = {
 				always = yes

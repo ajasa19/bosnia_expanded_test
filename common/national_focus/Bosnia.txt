@@ -659,8 +659,8 @@ focus_tree = {
     }
 
     focus = {
-        id = BOS_empower_mladi_muslimani
-        icon = GFX_focus_BOS_empower_mladi_muslimani
+        id = BOS_empower_united_muslim_organization
+        icon = GFX_focus_BOS_empower_united_muslim_organization
         x = 0
         y = 1
         prerequisite = { focus = BOS_ways_of_the_old }
@@ -695,12 +695,12 @@ focus_tree = {
     }
 
     focus = {
-        id = BOS_religious_education
-        icon = GFX_focus_BOS_education_reform
+        id = BOS_education_reform_n
+        icon = GFX_focus_BOS_education_reform_n
         x = -2
         y = 1
-        prerequisite = { focus = BOS_empower_mladi_muslimani }
-        relative_position_id = BOS_empower_mladi_muslimani
+        prerequisite = { focus = BOS_empower_united_muslim_organization }
+        relative_position_id = BOS_empower_united_muslim_organization
 
         cost = 5
 
@@ -720,7 +720,7 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            add_ideas = religious_education
+            add_ideas = education_reform_n
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.10
@@ -729,12 +729,12 @@ focus_tree = {
     }
 
     focus = {
-        id = BOS_islamic_democracy
+        id = BOS_strengthen_democracy
         icon = GFX_goal_support_democracy
         x = 0
         y = 1
-        prerequisite = { focus = BOS_empower_mladi_muslimani }
-        relative_position_id = BOS_empower_mladi_muslimani
+        prerequisite = { focus = BOS_empower_united_muslim_organization }
+        relative_position_id = BOS_empower_united_muslim_organization
 
         cost = 5
 
@@ -767,8 +767,8 @@ focus_tree = {
         icon = GFX_focus_BOS_bosnian_identity
         x = 2
         y = 1
-        prerequisite = { focus = BOS_empower_mladi_muslimani }
-        relative_position_id = BOS_empower_mladi_muslimani
+        prerequisite = { focus = BOS_empower_united_muslim_organization }
+        relative_position_id = BOS_empower_united_muslim_organization
 
         cost = 5
 
@@ -797,14 +797,15 @@ focus_tree = {
     }
 
     focus = {
-        id = BOS_pan_islamism
-        icon = GFX_focus_BOS_pan_islamism
-        x = 0
+        id = BOS_one_and_only
+        icon = GFX_focus_BOS_one_and_only
+        x = -1
         y = 2
         prerequisite = { focus = BOS_bosnian_identity }
-        prerequisite = { focus = BOS_islamic_democracy }
-        prerequisite = { focus = BOS_religious_education }
-        relative_position_id = BOS_empower_mladi_muslimani
+        prerequisite = { focus = BOS_strengthen_democracy }
+        prerequisite = { focus = BOS_education_reform_n }
+        mutually_exclusive = { focus = BOS_illyrian_awkaning }
+        relative_position_id = BOS_empower_united_muslim_organization
 
         cost = 5
 
@@ -824,17 +825,47 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            add_ideas = pan_islamism
+            add_ideas = bosnian_pride
         }
     }
 
     focus = {
-        id = BOS_the_islamic_union
+        id = BOS_illyrian_awkaning
+        icon = GFX_focus_BOS_illyrian_awkaning
+        x = 1
+        y = 2
+        prerequisite = { focus = BOS_bosnian_identity }
+        prerequisite = { focus = BOS_strengthen_democracy }
+        prerequisite = { focus = BOS_education_reform_n }
+        mutually_exclusive = { focus = BOS_one_and_only }
+        relative_position_id = BOS_empower_united_muslim_organization
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 4
+        }
+
+        available = {
+        }
+
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+    }
+
+    focus = {
+        id = BOS_the_illyrian_union
         icon = GFX_focus_generic_strike_at_democracy1
         x = 0
         y = 1
-        prerequisite = { focus = BOS_pan_islamism }
-        relative_position_id = BOS_pan_islamism
+        prerequisite = { focus = BOS_illyrian_awkaning }
+        relative_position_id = BOS_illyrian_awkaning
 
         cost = 5
 
@@ -857,7 +888,7 @@ focus_tree = {
             set_rule = {
                 can_create_factions = yes
             }
-            create_faction = islamic_union        
+            create_faction = illyrian_union
         }
     }
 
@@ -866,8 +897,8 @@ focus_tree = {
         icon = GFX_focus_BOS_request_albania
         x = -2
         y = 1
-        prerequisite = { focus = BOS_the_islamic_union }
-        relative_position_id = BOS_the_islamic_union
+        prerequisite = { focus = BOS_the_illyrian_union }
+        relative_position_id = BOS_the_illyrian_union
 
         cost = 5
 
@@ -898,8 +929,8 @@ focus_tree = {
         icon = GFX_focus_generic_befriend_turkey
         x = 2
         y = 1
-        prerequisite = { focus = BOS_the_islamic_union }
-        relative_position_id = BOS_the_islamic_union
+        prerequisite = { focus = BOS_the_illyrian_union }
+        relative_position_id = BOS_the_illyrian_union
 
         cost = 5
 
@@ -926,13 +957,13 @@ focus_tree = {
     }
 
     focus = {
-        id = BOS_islamic_union_trade_system
+        id = BOS_illyrian_union_trade_system
         icon = GFX_goal_generic_positive_trade_relations
         x = 0
         y = 2
         prerequisite = { focus = BOS_invite_turkey }
         prerequisite = { focus = BOS_invite_albania }
-        relative_position_id = BOS_the_islamic_union
+        relative_position_id = BOS_the_illyrian_union
 
         cost = 5
 
@@ -961,8 +992,8 @@ focus_tree = {
         icon = GFX_goal_generic_major_alliance
         x = -2
         y = 1
-        prerequisite = { focus = BOS_islamic_union_trade_system }
-        relative_position_id = BOS_islamic_union_trade_system
+        prerequisite = { focus = BOS_illyrian_union_trade_system }
+        relative_position_id = BOS_illyrian_union_trade_system
 
         cost = 5
 
@@ -1002,8 +1033,8 @@ focus_tree = {
         icon = GFX_goal_generic_intelligence_exchange
         x = 2
         y = 1
-        prerequisite = { focus = BOS_islamic_union_trade_system }
-        relative_position_id = BOS_islamic_union_trade_system
+        prerequisite = { focus = BOS_illyrian_union_trade_system }
+        relative_position_id = BOS_illyrian_union_trade_system
 
         cost = 5
 
@@ -1039,7 +1070,7 @@ focus_tree = {
         y = 2
         prerequisite = { focus = BOS_eastern_membership }
         prerequisite = { focus = BOS_invite_the_arab_world }
-        relative_position_id = BOS_islamic_union_trade_system
+        relative_position_id = BOS_illyrian_union_trade_system
 
         cost = 5
 
@@ -4225,8 +4256,8 @@ focus_tree = {
     }
 
     focus = {
-        id = BOS_education_reform
-        icon = GFX_focus_BOS_education_reform
+        id = BOS_education_reform_c
+        icon = GFX_focus_BOS_education_reform_c
         prerequisite = { focus = BOS_secure_the_new_state }
         x = -2
         y = 1
@@ -4263,10 +4294,10 @@ focus_tree = {
     focus = {
         id = BOS_the_destruction_of_nationalism
         icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-        prerequisite = { focus = BOS_education_reform }
+        prerequisite = { focus = BOS_education_reform_c }
         x = 0
         y = 1
-        relative_position_id = BOS_education_reform
+        relative_position_id = BOS_education_reform_c
 
         cost = 5
 

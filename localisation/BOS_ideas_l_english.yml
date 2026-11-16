@@ -29,7 +29,7 @@
  patriotic_spirit:0 "Patriotic Spirit"
  worker_rights:0 "Improved Worker Rights"
  paracom:0 "Local Communist Paramilitaries"
- education_reform:0 "Education Reform"
+ education_reform:0 "Socialist Education Reform"
  socialist_economy:0 "Socialist Economic System"
  spb:0 "Savez Pijonira Bosne"
  glory_revolution:0 "The Spreading Revolution"
@@ -43,8 +43,8 @@
  christian_labour:0 "Christian Labour"
  jizya_tax:0 "Jizya Tax"
  ways_of_the_old:0 "Ways of the Old"
- religious_education:0 "Religious Education"
- pan_islamism:0 "Pan Islamism"
+ education_reform_n:0 "Education Reform"
+ bosnian_pride:0 "Bosnian Pride"
 
 
  BOS_mustafa:0 "Mustafa Softić"
@@ -66,4 +66,4 @@
  BOS_fuad:0 "Fuad Mujkić"
  BOS_alija:0 "Alija Izetbegović"
 
- islamic_union:0 "Islamic Union"
+ illyrian_union:0 "Illyrian Union"

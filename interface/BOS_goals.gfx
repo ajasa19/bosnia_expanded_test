@@ -16,8 +16,8 @@ spriteTypes = {
     }
 
 	SpriteType = {
-	    name = "GFX_focus_BOS_empower_mladi_muslimani"
-		texturefile = "gfx/interface/goals/focus_BOS_empower_mladi_muslimani.dds"
+	    name = "GFX_focus_BOS_empower_united_muslim_organization"
+		texturefile = "gfx/interface/goals/focus_BOS_empower_united_muslim_organization.dds"
     }
 
 	SpriteType = {
@@ -126,8 +126,8 @@ spriteTypes = {
     }
 
     SpriteType = {
-	    name = "GFX_focus_BOS_education_reform"
-		texturefile = "gfx/interface/goals/focus_BOS_education_reform.dds"
+	    name = "GFX_focus_BOS_education_reform_c"
+		texturefile = "gfx/interface/goals/focus_BOS_education_reform_c.dds"
     }
 
     SpriteType = {
@@ -191,13 +191,18 @@ spriteTypes = {
     }
 
     SpriteType = {
-	    name = "GFX_focus_BOS_religious_education"
-		texturefile = "gfx/interface/goals/focus_BOS_religious_education.dds"
+	    name = "GFX_focus_BOS_education_reform_n"
+		texturefile = "gfx/interface/goals/focus_BOS_education_reform_n.dds"
     }
 
     SpriteType = {
-	    name = "GFX_focus_BOS_pan_islamism"
-		texturefile = "gfx/interface/goals/focus_BOS_pan_islamism.dds"
+	    name = "GFX_focus_BOS_one_and_only"
+		texturefile = "gfx/interface/goals/focus_BOS_one_and_only.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_illyrian_awkaning"
+		texturefile = "gfx/interface/goals/focus_BOS_illyrian_awkaning.dds"
     }
     
 }

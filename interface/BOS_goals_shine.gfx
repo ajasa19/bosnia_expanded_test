@@ -705,11 +705,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_BOS_education_reform_shine"
-		texturefile = "gfx/interface/goals/focus_BOS_education_reform.dds"
+		name = "GFX_focus_BOS_education_reform_c_shine"
+		texturefile = "gfx/interface/goals/focus_BOS_education_reform_c.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_BOS_education_reform.dds"
+			animationmaskfile = "gfx/interface/goals/focus_BOS_education_reform_c.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -722,7 +722,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_BOS_education_reform.dds"
+			animationmaskfile = "gfx/interface/goals/focus_BOS_education_reform_c.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1121,11 +1121,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_BOS_religious_education_shine"
-		texturefile = "gfx/interface/goals/focus_BOS_religious_education.dds"
+		name = "GFX_focus_BOS_education_reform_n_shine"
+		texturefile = "gfx/interface/goals/focus_BOS_education_reform_n.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_BOS_religious_education.dds"
+			animationmaskfile = "gfx/interface/goals/focus_BOS_education_reform_n.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1138,7 +1138,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_BOS_religious_education.dds"
+			animationmaskfile = "gfx/interface/goals/focus_BOS_education_reform_n.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1153,11 +1153,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_BOS_pan_islamism_shine"
-		texturefile = "gfx/interface/goals/focus_BOS_pan_islamism.dds"
+		name = "GFX_focus_BOS_one_and_only_shine"
+		texturefile = "gfx/interface/goals/focus_BOS_one_and_only.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_BOS_pan_islamism.dds"
+			animationmaskfile = "gfx/interface/goals/focus_BOS_one_and_only.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1170,7 +1170,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_BOS_pan_islamism.dds"
+			animationmaskfile = "gfx/interface/goals/focus_BOS_one_and_only.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1180,6 +1180,38 @@ spriteTypes = {
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_BOS_illyrian_awkaning_shine"
+		texturefile = "gfx/interface/goals/focus_BOS_illyrian_awkaning.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BOS_illyrian_awkaning.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BOS_illyrian_awkaning.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		legacy_lazy_load = no
 	}
