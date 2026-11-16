@@ -1,0 +1,655 @@
+#Bosnian Events#
+add_namespace = bosnia
+
+#Chetnik raids
+
+country_event = {
+    id = bosnia.4
+    title = bosnia.4.t
+    desc = bosnia.4.d
+    picture = GFX_country_event_republic_proclaimed
+    
+    trigger = {
+        tag = BOS
+        has_completed_focus = BOS_bmo_congress
+       
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.4.a
+        add_ideas = agrarian_reform
+        
+    }
+
+    option = {
+        name = bosnia.4.b
+        add_ideas = industrialisation
+        
+    }
+}
+
+country_event = {
+    id = bosnia.5
+    title = bosnia.5.t
+    desc = bosnia.5.d
+    picture = GFX_country_event_parliament_construction
+    
+    trigger = {
+        tag = BOS
+        has_completed_focus = BOS_establish_parliament
+       
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.5.a
+        add_ideas = parliament_construction
+        set_country_flag = par_construction
+        hidden_effect = {
+           country_event = { hours = 2400 id = bosnia.6 }
+        }
+        
+    }
+}
+
+country_event = {
+    id = bosnia.6
+    title = bosnia.6.t
+    desc = bosnia.6.d
+    picture = GFX_country_event_parliament_construction
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.6.a
+        remove_ideas = parliament_construction
+        add_stability = 0.05
+        add_popularity = {
+                popularity = 0.1
+                ideology = democratic
+        }
+        set_country_flag = par_constructed
+        hidden_effect = {
+           country_event = { hours = 1200 id = bosnia.7 }
+        }
+        
+    }
+}
+
+country_event = {
+    id = bosnia.7
+    title = bosnia.7.t
+    desc = bosnia.7.d
+    picture = GFX_country_event_corruption
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.7.a
+        add_ideas = corruption
+        
+    }
+}
+
+country_event = {
+    id = bosnia.8
+    title = bosnia.8.t
+    desc = bosnia.8.d
+    picture = GFX_country_event_corruption
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.8.a
+        hidden_effect = {
+           country_event = { hours = 3600 id = bosnia.9 }
+        }
+        
+    }
+}
+
+country_event = {
+    id = bosnia.9
+    title = bosnia.9.t
+    desc = bosnia.9.d
+    picture = GFX_country_event_corruption
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.9.a
+        swap_ideas = {
+         remove_idea = corruption
+         add_idea = corruption_2
+        }
+        hidden_effect = {
+           country_event = { hours = 3600 id = bosnia.10 }
+        } 
+        
+    }
+}
+
+country_event = {
+    id = bosnia.10
+    title = bosnia.10.t
+    desc = bosnia.10.d
+    picture = GFX_country_event_corruption
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.10.a
+        swap_ideas = {
+         remove_idea = corruption_2
+         add_idea = corruption_3
+        }
+
+        hidden_effect = {
+           country_event = { hours = 4800 id = bosnia.11 }
+        } 
+        
+    }
+}
+
+country_event = {
+    id = bosnia.11
+    title = bosnia.11.t
+    desc = bosnia.11.d
+    picture = GFX_country_event_dzafer_arrested
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.11.a
+        remove_ideas = corruption_3
+        set_country_flag = dzafer_arrested
+    }
+
+}
+
+country_event = {
+    id = bosnia.12
+    title = bosnia.12.t
+    desc = bosnia.12.d
+    picture = GFX_country_event_sarajevo_protest
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.12.a
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.07
+        }
+        add_stability = -0.02
+    }
+
+}
+
+country_event = {
+    id = bosnia.13
+    title = bosnia.13.t
+    desc = bosnia.13.d
+    picture = GFX_country_event_bosniak_song
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.13.a
+        add_stability = 0.1
+    }
+}
+
+country_event = {
+    id = bosnia.14
+    title = bosnia.14.t
+    desc = bosnia.14.d
+    picture = GFX_country_event_serbian_statue
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.14.a
+        add_political_power = 300
+        add_stability = -0.08
+        hidden_effect = {
+           country_event = { hours = 480 id = bosnia.15 }
+        }    
+    }
+
+    option = {
+        name = bosnia.14.b
+        add_political_power = -50    
+    }
+}
+
+country_event = {
+    id = bosnia.15
+    title = bosnia.15.t
+    desc = bosnia.15.d
+    picture = GFX_country_event_sarajevo_protest
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.15.a
+        add_stability = -0.15    
+    }
+}
+
+country_event = {
+    id = bosnia.16
+    title = bosnia.16.t
+    desc = bosnia.16.d
+    picture = GFX_country_event_sarajevo_protest
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.16.a
+        BOS = {
+           country_event = { hours = 12 id = bosnia.17 }
+        }    
+    }
+}
+
+country_event = {
+    id = bosnia.17
+    title = bosnia.17.t
+    desc = bosnia.17.d
+    picture = GFX_country_event_albania
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.17.a
+        BOS = { set_state_owner = 44 }
+        hidden_effect = {
+           ITA = { remove_state_claim = 44 }
+        }    
+    }
+}
+
+country_event = {
+    id = bosnia.18
+    title = bosnia.18.t
+    desc = bosnia.18.d
+    picture = GFX_country_event_serbian_question
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.18.a
+        add_stability = -0.05
+        custom_effect_tooltip = bosnia_integrate
+        hidden_effect = {
+           country_event = { hours = 240 id = bosnia.19 }
+        }           
+    }
+
+    option = {
+        name = bosnia.18.b
+        add_ideas = serb_labour
+        ENG = {
+            add_opinion_modifier = {
+                target = ROOT
+                modifier = large_decrease
+            }
+        }
+        FRA = {
+            add_opinion_modifier = {
+                target = ROOT
+                modifier = large_decrease
+            }
+        }
+        USA = {
+            add_opinion_modifier = {
+                target = ROOT
+                modifier = large_decrease
+            }
+        }
+        add_stability = -0.2            
+    }
+}
+
+country_event = {
+    id = bosnia.19
+    title = bosnia.19.t
+    desc = bosnia.19.d
+    picture = GFX_country_event_serbia_church
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.19.a
+        add_stability = 0.05            
+    }
+
+    option = {
+        name = bosnia.19.b
+        add_stability = 0.1
+        add_political_power = -200
+        hidden_effect = {
+           country_event = { hours = 600 id = bosnia.20 }
+        }            
+    }
+}
+
+country_event = {
+    id = bosnia.20
+    title = bosnia.20.t
+    desc = bosnia.20.d
+    picture = GFX_country_event_reformed_school
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.20.a
+        add_stability = 0.03
+        add_political_power = 50
+        hidden_effect = {
+           country_event = { hours = 1920 id = bosnia.21 }
+        }            
+    }
+}
+
+country_event = {
+    id = bosnia.21
+    title = bosnia.21.t
+    desc = bosnia.21.d
+    picture = GFX_country_event_dead_serbs
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.21.a
+        add_stability = 0.1
+        add_political_power = 75            
+    }
+}
+
+country_event = {
+    id = bosnia.22
+    title = bosnia.22.t
+    desc = bosnia.22.d
+    picture = GFX_country_event_istanbul1
+
+    mean_time_to_happen = { days = 1 }
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = BOS
+        BOS = {
+            has_completed_focus = BOS_ban_the_islamski_svijet
+            owns_state = 797              
+        }
+    }
+
+    option = {
+        name = bosnia.22.a
+        set_province_name = { id = 9833 name = "Kotromanićgrad"}            
+    }
+
+    option = {
+        name = bosnia.22.b
+        add_stability = -0.05            
+    }
+}
+
+country_event = {
+    id = bosnia.23
+    title = bosnia.23.t
+    desc = bosnia.23.d
+    picture = GFX_country_event_tuzla_conference
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.23.a
+        add_stability = 0.02            
+    }
+}
+
+country_event = {
+    id = bosnia.24
+    title = bosnia.24.t
+    desc = bosnia.24.d
+    picture = GFX_country_event_meeting_chetnik
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.24.a
+        swap_ideas = {
+         remove_idea = chetnik_opposition
+         add_idea = chetnik_opposition_2
+        }
+
+        hidden_effect = {
+           country_event = { hours = 240 id = bosnia.25 }
+        }            
+    }
+    
+}
+
+country_event = {
+    id = bosnia.25
+    title = bosnia.25.t
+    desc = bosnia.25.d
+    picture = GFX_country_event_loose_lip
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.25.a
+        add_political_power = 5
+
+        hidden_effect = {
+           country_event = { hours = 1200 id = bosnia.26 }
+        }            
+    }
+    
+}
+
+country_event = {
+    id = bosnia.26
+    title = bosnia.26.t
+    desc = bosnia.26.d
+    picture = GFX_country_bunker_raided
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.26.a
+        add_manpower = -120
+        swap_ideas = {
+         remove_idea = chetnik_opposition_2
+         add_idea = chetnik_opposition_3
+        }
+
+        hidden_effect = {
+           country_event = { hours = 480 id = bosnia.27 }
+        }            
+    }
+}
+
+country_event = {
+    id = bosnia.27
+    title = bosnia.27.t
+    desc = bosnia.27.d
+    picture = GFX_country_draza1
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.27.a
+        remove_ideas = chetnik_opposition_3
+
+        hidden_effect = {
+           country_event = { hours = 2400 id = bosnia.28 }
+        }            
+    }
+}
+
+country_event = {
+    id = bosnia.28
+    title = bosnia.28.t
+    desc = bosnia.28.d
+    picture = GFX_country_draza2
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.28.a
+        add_political_power = 200            
+    }
+
+    option = {
+        name = bosnia.28.b
+        add_stability = 0.05                    
+    }
+}
+
+country_event = {
+    id = bosnia.29
+    title = bosnia.29.t
+    desc = bosnia.29.d
+    picture = GFX_country_duro_speech
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.29.a
+        add_popularity = {
+            ideology = communism
+            popularity = 0.05
+        }
+        hidden_effect = {
+            country_event = { hours = 2500 id = bosnia.30 }
+        }            
+    }
+}
+
+country_event = {
+    id = bosnia.30
+    title = bosnia.30.t
+    desc = bosnia.30.d
+    picture = GFX_country_paracom
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.30.a
+        add_ideas = paracom            
+    }
+}
+
+country_event = {
+    id = bosnia.31
+    title = bosnia.31.t
+    desc = bosnia.31.d
+    picture = GFX_country_event_sarajevo_protest
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.31.a
+        add_stability = -0.1
+        set_politics = {
+            ruling_party = communism
+        }
+        remove_ideas = paracom            
+    }
+}
+
+country_event = {
+    id = bosnia.32
+    title = bosnia.32.t
+    desc = bosnia.32.d
+    picture = GFX_country_saint_sava
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    trigger = {
+        tag = BOS
+        BOS = {
+            has_completed_focus = BOS_endorse_the_islamski_svijet
+            owns_state = 107              
+        }
+    }
+
+    option = {
+        name = bosnia.32.a
+        add_stability = 0.1           
+    }
+
+    option = {
+        name = bosnia.32.b
+        add_political_power = 50            
+    }
+}
+    
+  
+    
+
+    

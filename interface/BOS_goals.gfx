@@ -1,0 +1,203 @@
+spriteTypes = {	
+	
+	SpriteType = {
+	    name = "GFX_focus_BOS_bmo_congress"
+		texturefile = "gfx/interface/goals/focus_BOS_bmo_congress.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_religion_council"
+		texturefile = "gfx/interface/goals/focus_BOS_religion_council.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_railroad_plan"
+		texturefile = "gfx/interface/goals/focus_BOS_railroad_plan.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_focus_BOS_empower_mladi_muslimani"
+		texturefile = "gfx/interface/goals/focus_BOS_empower_mladi_muslimani.dds"
+    }
+
+	SpriteType = {
+	    name = "GFX_focus_BOS_bosnian_identity"
+		texturefile = "gfx/interface/goals/focus_BOS_bosnian_identity.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_universal_healthcare"
+		texturefile = "gfx/interface/goals/focus_BOS_universal_healthcare.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_trust_west"
+		texturefile = "gfx/interface/goals/focus_BOS_trust_west.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_discredit_accords"
+		texturefile = "gfx/interface/goals/focus_BOS_discredit_accords.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_ban_islamski"
+		texturefile = "gfx/interface/goals/focus_BOS_ban_islamski.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_form_handzar"
+		texturefile = "gfx/interface/goals/focus_BOS_form_handzar.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_national_restoration"
+		texturefile = "gfx/interface/goals/focus_BOS_national_restoration.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_bosniakism"
+		texturefile = "gfx/interface/goals/focus_BOS_bosniakism.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_serbian_question"
+		texturefile = "gfx/interface/goals/focus_BOS_serbian_question.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_greater_bosnia"
+		texturefile = "gfx/interface/goals/focus_BOS_greater_bosnia.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_revenge_opression"
+		texturefile = "gfx/interface/goals/focus_BOS_revenge_opression.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_domination"
+		texturefile = "gfx/interface/goals/focus_BOS_domination.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_request_albania"
+		texturefile = "gfx/interface/goals/focus_BOS_request_albania.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_greece"
+		texturefile = "gfx/interface/goals/focus_BOS_greece.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_turkey"
+		texturefile = "gfx/interface/goals/focus_BOS_turkey.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_root_out_the_ustase"
+		texturefile = "gfx/interface/goals/focus_BOS_root_out_the_ustase.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_operation_sloboda"
+		texturefile = "gfx/interface/goals/focus_BOS_operation_sloboda.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_form_arbih"
+		texturefile = "gfx/interface/goals/focus_BOS_form_arbih.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_dervisevic_reforms"
+		texturefile = "gfx/interface/goals/focus_BOS_dervisevic_reforms.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_ibrahim_reeforms"
+		texturefile = "gfx/interface/goals/focus_BOS_ibrahim_reeforms.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_pride"
+		texturefile = "gfx/interface/goals/focus_BOS_pride.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_education_reform"
+		texturefile = "gfx/interface/goals/focus_BOS_education_reform.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_socialist_economy"
+		texturefile = "gfx/interface/goals/focus_BOS_socialist_economy.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_spb"
+		texturefile = "gfx/interface/goals/focus_BOS_spb.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_invite_marshal"
+		texturefile = "gfx/interface/goals/focus_BOS_invite_marshal.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_secret_police"
+		texturefile = "gfx/interface/goals/focus_BOS_secret_police.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_federal_law"
+		texturefile = "gfx/interface/goals/focus_BOS_federal_law.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_endorse_islamski"
+		texturefile = "gfx/interface/goals/focus_BOS_endorse_islamski.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_sharia_code"
+		texturefile = "gfx/interface/goals/focus_BOS_sharia_code.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_madrasa"
+		texturefile = "gfx/interface/goals/focus_BOS_madrasa.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_christian_labour"
+		texturefile = "gfx/interface/goals/focus_BOS_christian_labour.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_jihad_serbs"
+		texturefile = "gfx/interface/goals/focus_BOS_jihad_serbs.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_adopt_khalifa"
+		texturefile = "gfx/interface/goals/focus_BOS_adopt_khalifa.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_attack_rome"
+		texturefile = "gfx/interface/goals/focus_BOS_attack_rome.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_religious_education"
+		texturefile = "gfx/interface/goals/focus_BOS_religious_education.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_pan_islamism"
+		texturefile = "gfx/interface/goals/focus_BOS_pan_islamism.dds"
+    }
+    
+}

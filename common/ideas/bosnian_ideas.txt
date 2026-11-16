@@ -1,0 +1,1064 @@
+ideas = {
+
+    political_advisor = {
+
+        BOS_mustafa = {
+
+            picture = BOS_mustafa_softic
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    traits = { smooth_talking_charmer }
+        }
+
+        BOS_mak = {
+
+            picture = BOS_mak_dizdar
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    traits = { popular_figurehead }
+        }
+
+        BOS_elez = {
+
+            picture = BOS_elez_dervisevic
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    traits = { war_industrialist }
+        }
+
+        BOS_halim = {
+
+            picture = BOS_halim_malkoc
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    available = {
+			    has_completed_focus = BOS_bosna_zove
+		    }
+
+		    traits = { fascist_demagogue }
+        }
+
+        BOS_alija = {
+
+            picture = BOS_halim_malkoc
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    available = {
+			    has_completed_focus = BOS_ways_of_the_old
+		    }
+
+		    traits = { traditionalist }
+        }
+
+        BOS_aldin = {
+
+            picture = BOS_sehic_aldin
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    available = {
+			    has_completed_focus = BOS_assist_the_partisans
+		    }
+
+		    traits = { communist_revolutionary }
+        }
+
+        BOS_suad = {
+
+            picture = BOS_suad_karat
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    traits = { democratic_reformer }
+        }
+
+        BOS_nerman = {
+
+            picture = BOS_nerman_omanovic
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    traits = { captain_of_industry }
+        }
+
+        BOS_dzafer = {
+
+            picture = BOS_dzafer_kulenovic
+
+            allowed = {
+			    original_tag = BOS
+		    }
+		    available = {
+		
+			    NOT = { has_country_flag = dzafer_arrested }
+			
+		    }	
+
+		    traits = { silent_workhorse }
+        }
+    }
+
+    army_chief = {
+        BOS_halim_2 = {
+
+            picture = BOS_halim_malkoc_2
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    traits = { army_chief_offensive_2 }
+		}
+
+		BOS_huska = {
+
+            picture = BOS_huska_miljkovic
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    traits = { army_chief_maneuver_2 }
+		}    
+    }    
+
+    air_chief = {
+
+        BOS_safet = {
+
+            picture = BOS_safet_boskic
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    traits = { air_chief_safety_2 }
+		}    
+    }
+
+    high_command = {
+
+        BOS_muhamed = {
+            ledger = army
+
+            picture = BOS_hadziefendic
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    traits = { army_armored_2 }
+		}
+
+		BOS_dzemal = {
+		    ledger = army
+
+            picture = BOS_dzemal_ibrahimovic
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    traits = { army_infantry_2 }
+		}
+
+		BOS_fuad = {
+		    ledger = army
+
+            picture = BOS_fuad_mujkic
+
+            allowed = {
+			    original_tag = BOS
+		    }
+
+		    traits = { army_regrouping_2 }
+		}
+	}	
+
+        
+
+
+
+
+
+
+
+	country = {
+		chetnik_opposition = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				stability_factor = -0.4
+				conscription_factor = -0.1
+			}
+		}
+
+		bosnian_army_2 = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
+
+		croatian_nationalism = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1 
+				war_support_factor = -0.15
+			}
+		}
+
+		sarajevo_accords = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.1
+			}
+		}
+
+		agrarian_reform = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		industrialisation = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		parliament_construction = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		religion_council = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				stability_factor = 0.03
+				political_power_factor = 0.05
+			}
+		}
+
+		
+		corruption = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.20
+				political_power_factor = -0.3
+			}
+		}
+
+		corruption_2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				stability_factor = -0.12
+				war_support_factor = -0.16
+				political_power_factor = -0.25
+			}
+		}
+
+		corruption_3 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				stability_factor = -0.09
+				war_support_factor = -0.11
+				political_power_factor = -0.17
+			}
+		}
+
+		no_fascism = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				fascism_drift = -0.10 
+				fascism_acceptance = -75 
+			}
+		}
+
+		universal_healthcare = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				political_power_gain = -0.3 
+				stability_weekly = 0.001
+				consumer_goods_factor = 0.05 
+			}   
+		}
+
+		defensive_ideas = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				production_speed_bunker_factor = 0.3 
+				 
+			}   
+		}
+
+		war_propaganda = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				war_support_weekly = 0.001 
+				 
+			}   
+		}
+
+		bosnia_first = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {
+				political_power_gain = 0.3
+				conscription = 0.02
+				offence = 0.1
+				defence = 0.1				 
+			}   
+		}
+
+		bosniakism = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {				
+				conscription = 0.05	
+				compliance_gain = 0.05							 
+			}   
+		}
+
+		balkan_domination = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {				
+				justify_war_goal_time = -0.3 	
+				generate_wargoal_tension = -0.2				 							 
+			}   
+		}
+
+		serb_labour = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_2
+
+			modifier = {				
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.25
+				industrial_capacity_factory = 0.2
+				industry_repair_factor = 0.5				 							 
+			}   
+		}
+
+		chetnik_opposition_2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				stability_factor = -0.35
+				conscription_factor = -0.08
+			}
+		}
+
+		chetnik_opposition_3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				stability_factor = -0.15
+				conscription_factor = -0.03
+			}
+		}
+
+		new_economy = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				industry_repair_factor = 0.5  
+			}
+		}
+
+		mobilisation_of_the_masses = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				conscription = 0.03  
+			}
+		}
+
+		patriotic_spirit = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				conscription = 0.01
+				army_morale_factor = 0.08
+				defence = 0.1
+				offence = 0.1   
+			}
+		}
+
+		worker_rights = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.1   
+			}
+		}
+
+		paracom = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				communism_drift = 0.05
+				conscription = -0.005   
+			}
+		}
+
+		education_reform = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				political_power_factor = 0.15   
+			}
+		}
+
+		socialist_economy = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				consumer_goods_factor = -0.05   
+			}
+		}
+
+		spb = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				conscription = 0.03
+				army_morale_factor = 0.1   
+			}
+		}
+
+		glory_revolution = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				conscription = 0.02
+				justify_war_goal_time = -0.35   
+			}
+		}
+
+		secret_police = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				compliance_gain = 0.05   
+			}
+		}
+
+		cult_personality = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				political_power_factor = 0.1
+				war_support_weekly = 0.001   
+			}
+		}
+
+		federal_law = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				compliance_gain = 0.1
+				stability_weekly = 0.001   
+			}
+		}
+
+		sharia_law = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				industrial_capacity_factory = 0.1 
+				political_power_factor = 0.2
+				compliance_gain = 0.15
+				resistance_damage_to_garrison = -0.1    
+			}
+		}
+
+		jihad = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				justify_war_goal_time = -0.3
+				defence = 0.15
+				offence = 0.15   
+			}
+		}
+
+		martyrdom = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				conscription = 0.05
+				army_morale_factor = 0.08
+				attrition = -0.1
+				non_core_manpower = 0.05   
+			}
+		}
+
+		new_madrasas = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				research_speed_factor = 0.15   
+			}
+		}
+
+		christian_labour = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.25
+				local_resources_factor = 0.10 
+				production_speed_buildings_factor = 0.3
+				stability_factor = -0.2   
+			}
+		}
+
+		jizya_tax = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.2
+				political_power_gain = 0.15
+				conscription_factor = -0.15   
+			}
+		}
+
+		ways_of_the_old = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				neutrality_drift = 0.10    
+			}
+		}
+
+		religious_education = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				research_speed_factor = 0.1    
+			}
+		}
+
+		pan_islamism = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				conscription = 0.02 
+				war_support_factor = 0.05
+				political_power_gain = 0.2   
+			}
+		}
+	}
+}
+
+
+
+
+	

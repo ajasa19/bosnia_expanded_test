@@ -1,0 +1,12 @@
+﻿units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "King Tvrtko I"			
+		naval_base = 9809
+		task_force = {
+			name = "King Tvrtko I"
+			location = 9809
+			ship = { name = "King Tvrtko I" definition = battleship equipment = { ship_hull_heavy_4 = { amount = 1 owner = ENG version_name = "King Tvrtko I" } } }
+		}
+	}
+}

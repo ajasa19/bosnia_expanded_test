@@ -1,0 +1,372 @@
+spriteTypes = {	
+     
+	#Bosnia
+
+	spriteType = {
+		name = "GFX_idea_chetnik_opposition"
+		texturefile = "gfx/interface/ideas/chetnik_opposition.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_chetnik_opposition_2"
+		texturefile = "gfx/interface/ideas/chetnik_opposition.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_chetnik_opposition_3"
+		texturefile = "gfx/interface/ideas/chetnik_opposition.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_bosnian_army_2"
+		texturefile = "gfx/interface/ideas/bosnian_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_croatian_nationalism"
+		texturefile = "gfx/interface/ideas/croatian_nationalism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_croatian_nationalism"
+		texturefile = "gfx/interface/ideas/croatian_nationalism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sarajevo_accords"
+		texturefile = "gfx/interface/ideas/idea_generic_constitutional_guarantee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_agrarian_reform"
+		texturefile = "gfx/interface/ideas/idea_generic_agrarian_reform.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_industrialisation"
+		texturefile = "gfx/interface/ideas/idea_generic_central_management.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_parliament_construction"
+		texturefile = "gfx/interface/ideas/idea_generic_exploit_mines.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_religion_council"
+		texturefile = "gfx/interface/ideas/generic_victors_of_ww1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_corruption"
+		texturefile = "gfx/interface/ideas/idea_rom_carol_ii_hedonist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_corruption_2"
+		texturefile = "gfx/interface/ideas/idea_rom_carol_ii_hedonist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_corruption_3"
+		texturefile = "gfx/interface/ideas/idea_rom_carol_ii_hedonist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_fascism"
+		texturefile = "gfx/interface/ideas/idea_saf_ossewabrandwag_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_universal_healthcare"
+		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_defensive_ideas"
+		texturefile = "gfx/interface/ideas/FRA_fortification_focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_war_propaganda"
+		texturefile = "gfx/interface/ideas/idea_generic_war_preparation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_bosnia_first"
+		texturefile = "gfx/interface/ideas/idea_generic_war_preparation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_bosniakism"
+		texturefile = "gfx/interface/ideas/bosniakism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_balkan_domination"
+		texturefile = "gfx/interface/ideas/idea_rom_balkan_dominance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_serb_labour"
+		texturefile = "gfx/interface/ideas/idea_saf_history_of_segregation_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_new_economy"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mobilisation_of_the_masses"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_patriotic_spirit"
+		texturefile = "gfx/interface/ideas/generic_manpower_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_worker_rights"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_paracom"
+		texturefile = "gfx/interface/ideas/trotskyite_plot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_education_reform"
+		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_socialist_economy"
+		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_spb"
+		texturefile = "gfx/interface/ideas/spa_la_division_azul.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_glory_revolution"
+		texturefile = "gfx/interface/ideas/idea_ger_the_great_red_menace.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_secret_police"
+		texturefile = "gfx/interface/ideas/generic_spy_intel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_cult_personality"
+		texturefile = "gfx/interface/ideas/idea_saf_soviet_advisers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_federal_law"
+		texturefile = "gfx/interface/ideas/generic_pp_unity_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sharia_law"
+		texturefile = "gfx/interface/ideas/idea_raj_marginalized_muslim_community_angry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_jihad"
+		texturefile = "gfx/interface/ideas/idea_raj_marginalized_muslim_community.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_martyrdom"
+		texturefile = "gfx/interface/ideas/idea_ast_volunteer_defence_corps.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_new_madrasas"
+		texturefile = "gfx/interface/ideas/idea_jap_duplicate_research.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_christian_labour"
+		texturefile = "gfx/interface/ideas/idea_saf_history_of_segregation_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_jizya_tax"
+		texturefile = "gfx/interface/ideas/spr_appropriate_church_riches.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ways_of_the_old"
+		texturefile = "gfx/interface/ideas/generic_pp_unity_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_religious_education"
+		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_pan_islamism"
+		texturefile = "gfx/interface/ideas/idea_raj_marginalized_muslim_community_happy.dds"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_idea_BOS_mustafa"
+		texturefile = "gfx/interface/ideas/BOS_mustafa_softic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_mak"
+		texturefile = "gfx/interface/ideas/BOS_mak_dizdar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_elez"
+		texturefile = "gfx/interface/ideas/BOS_elez_dervisevic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_kasim"
+		texturefile = "gfx/interface/ideas/BOS_kasim_dobraca.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_halim"
+		texturefile = "gfx/interface/ideas/BOS_halim_malkoc.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_aldin"
+		texturefile = "gfx/interface/ideas/BOS_sehic_aldin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_suad"
+		texturefile = "gfx/interface/ideas/BOS_suad_karat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_nerman"
+		texturefile = "gfx/interface/ideas/BOS_nerman_omanovic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_dzafer"
+		texturefile = "gfx/interface/ideas/BOS_dzafer_kulenovic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_safet"
+		texturefile = "gfx/interface/ideas/BOS_safet_boskic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_halim_2"
+		texturefile = "gfx/interface/ideas/BOS_halim_malkoc_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_huska"
+		texturefile = "gfx/interface/ideas/BOS_huska_miljkovic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_muhamed"
+		texturefile = "gfx/interface/ideas/BOS_hadziefendic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_dzemal"
+		texturefile = "gfx/interface/ideas/BOS_dzemal_ibrahimovic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_fuad"
+		texturefile = "gfx/interface/ideas/BOS_fuad_mujkic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BOS_alija"
+		texturefile = "gfx/interface/ideas/BOS_alija_izetbegovic.dds"
+	}
+
+	# aliases so advisor picture = <name> resolves to GFX_idea_<name>
+		spriteType = {
+			name = "GFX_idea_BOS_dzafer_kulenovic"
+			texturefile = "gfx/interface/ideas/BOS_dzafer_kulenovic.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_dzemal_ibrahimovic"
+			texturefile = "gfx/interface/ideas/BOS_dzemal_ibrahimovic.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_elez_dervisevic"
+			texturefile = "gfx/interface/ideas/BOS_elez_dervisevic.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_fuad_mujkic"
+			texturefile = "gfx/interface/ideas/BOS_fuad_mujkic.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_hadziefendic"
+			texturefile = "gfx/interface/ideas/BOS_hadziefendic.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_halim_malkoc"
+			texturefile = "gfx/interface/ideas/BOS_halim_malkoc.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_halim_malkoc_2"
+			texturefile = "gfx/interface/ideas/BOS_halim_malkoc_2.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_huska_miljkovic"
+			texturefile = "gfx/interface/ideas/BOS_huska_miljkovic.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_mak_dizdar"
+			texturefile = "gfx/interface/ideas/BOS_mak_dizdar.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_mustafa_softic"
+			texturefile = "gfx/interface/ideas/BOS_mustafa_softic.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_nerman_omanovic"
+			texturefile = "gfx/interface/ideas/BOS_nerman_omanovic.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_safet_boskic"
+			texturefile = "gfx/interface/ideas/BOS_safet_boskic.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_sehic_aldin"
+			texturefile = "gfx/interface/ideas/BOS_sehic_aldin.dds"
+		}
+
+		spriteType = {
+			name = "GFX_idea_BOS_suad_karat"
+			texturefile = "gfx/interface/ideas/BOS_suad_karat.dds"
+		}
+}

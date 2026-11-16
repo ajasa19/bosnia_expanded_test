@@ -1,0 +1,134 @@
+spriteTypes = {
+
+    #Bosnia
+
+	spriteType = {
+		name = "GFX_news_event_fall_of_belgrade"
+		texturefile = "gfx/event_pictures/news_event_fall_of_belgrade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_fall_of_pparis"
+		texturefile = "gfx/event_pictures/news_event_fall_of_pparis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_factory_broken"
+		texturefile = "gfx/event_pictures/country_event_factory_broken.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_chetnik_murder"
+		texturefile = "gfx/event_pictures/country_event_chetnik_murder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_republic_proclaimed"
+		texturefile = "gfx/event_pictures/country_event_republic_proclaimed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_parliament_construction"
+		texturefile = "gfx/event_pictures/country_event_parliament_construction.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_corruption"
+		texturefile = "gfx/event_pictures/country_event_corruption.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_dzafer_arrested"
+		texturefile = "gfx/event_pictures/country_event_dzafer_arrested.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_sarajevo_protest"
+		texturefile = "gfx/event_pictures/country_event_sarajevo_protest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_bosniak_song"
+		texturefile = "gfx/event_pictures/country_event_bosniak_song.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_serbian_statue"
+		texturefile = "gfx/event_pictures/country_event_serbian_statue.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_albania"
+		texturefile = "gfx/event_pictures/country_event_albania.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_serbian_question"
+		texturefile = "gfx/event_pictures/country_event_serbian_question.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_serbia_church"
+		texturefile = "gfx/event_pictures/country_event_serbia_church.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_reformed_school"
+		texturefile = "gfx/event_pictures/country_event_reformed_school.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_dead_serbs"
+		texturefile = "gfx/event_pictures/country_event_dead_serbs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_istanbul1"
+		texturefile = "gfx/event_pictures/country_event_istanbul1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_tuzla_conference"
+		texturefile = "gfx/event_pictures/country_event_tuzla_conference.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_meeting_chetnik"
+		texturefile = "gfx/event_pictures/country_event_meeting_chetnik.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_loose_lip"
+		texturefile = "gfx/event_pictures/country_event_loose_lip.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_bunker_raided"
+		texturefile = "gfx/event_pictures/country_event_bunker_raided.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_draza1"
+		texturefile = "gfx/event_pictures/country_event_draza1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_draza2"
+		texturefile = "gfx/event_pictures/country_event_draza2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_duro_speech"
+		texturefile = "gfx/event_pictures/country_event_duro_speech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_paracom"
+		texturefile = "gfx/event_pictures/country_event_paracom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_saint_sava"
+		texturefile = "gfx/event_pictures/country_event_saint_sava.dds"
+	}
+}

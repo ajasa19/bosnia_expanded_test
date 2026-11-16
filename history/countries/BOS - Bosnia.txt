@@ -1,0 +1,213 @@
+capital = 104
+
+set_oob = "BOS_1936"
+
+set_research_slots = 3
+
+# Starting tech
+# clone of Yugoslavia
+set_technology = {
+	tech_support = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	motorised_infantry = 1
+}
+if = {
+	limit = { NOT = { has_dlc = "By Blood Alone" } }
+	set_technology = { early_fighter = 1 }
+}
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+add_ideas = {
+		chetnik_opposition
+		bosnian_army_2
+		croatian_nationalism
+	}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	fascism = 10
+	neutrality = 0
+	communism = 15
+	democratic = 75
+}
+
+
+create_country_leader = {
+	name = "Mehmed Spaho"	
+	desc = "ANTE_PAVELIC_DESC"
+	picture = "Mehmed_Spaho.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		popular_figurehead
+	}	
+}
+
+create_country_leader = {
+	name = "Đuro Pucar"	
+	desc = "ANTE_PAVELIC_DESC"
+	picture = "duro_pucar.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		
+	}	
+}
+
+create_country_leader = {
+	name = "Ademaga Mešić"
+	desc = "ANTE_PAVELIC_DESC"
+	picture = "ademaga_mesic.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		
+	}	
+}
+
+#create_country_leader = {
+#	name = "Mustafa Busuladžić"
+#	desc = "ANTE_PAVELIC_DESC"
+#	picture = "mustafa_busul.dds"
+#	expire = "1965.1.1"
+#	ideology = centrism
+#	traits = {
+#		
+#	}	
+#}
+
+create_country_leader = {
+	name = "Council of National Salvation"
+	desc = "ANTE_PAVELIC_DESC"
+	picture = "national_council.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		
+	}	
+}
+
+create_field_marshal = {
+	name = "Ibrahim Pjanić"
+	picture = "general_Ibrahim_Pjanic.dds"
+	traits = { defensive_doctrine trait_mountaineer }
+	skill = 5
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Muhamed Hadžiefendić"
+	picture = "general_muhamed.dds"
+	traits = { panzer_leader trait_mountaineer winter_specialist }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Elez Dervišević"
+	picture = "general_elez.dds"
+	traits = { hill_fighter urban_assault_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Husein Miljković"
+	picture = "general_huska.dds"
+	traits = { ranger }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Abdulah Muhasilović"
+	picture = "general_abdulah.dds"
+	traits = { media_personality trickster }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sulejman Filipović"
+	picture = "general_sulejman.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Tahir Alagić"
+	picture = "general_tahir.dds"
+	traits = { infantry_officer }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
+}	
+	 
+	
+	

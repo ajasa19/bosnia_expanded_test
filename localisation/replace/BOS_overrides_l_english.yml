@@ -1,0 +1,49 @@
+﻿l_english:
+
+# --- country names (Bosnia)
+ BOS_fascism:1 "Bosniak National State"
+ BOS_fascism_DEF:1 "the Bosniak National State"
+ BOS_democratic:1 "Republic of Bosnia and Herzegovina"
+ BOS_democratic_DEF:1 "the Republic of Bosnia and Herzegovina"
+ BOS_neutrality:0 "Bosnia"
+ BOS_neutrality_DEF:0 "Bosnia"
+ BOS_communism:1 "Socialist Republic of Bosnia"
+ BOS_communism_DEF:1 "the Socialist Republic of Bosnia"
+ BOS_fascism_ADJ:0 "Bosniak"
+ BOS_democratic_ADJ:0 "Bosniak"
+ BOS_neutrality_ADJ:0 "Bosniak"
+ BOS_communism_ADJ:0 "Bosniak"
+
+# --- party names
+ BOS_democratic_party:0 "BMO"
+ BOS_democratic_party_long:0 "Bošnjačka Muslimanska Organizacija "
+ BOS_fascism_party:0 "HSS-MO"
+ BOS_fascism_party_long:0 "Hrvatska Seljačka Stranka - Muslim Organization"
+ BOS_communism_party:0 "KPBIH"
+ BOS_communism_party_long:0 "Komunistička Partija Bosne i Hercegovine"
+ BOS_neutrality_party:0 "UMO"
+ BOS_neutrality_party_long:0 "Ujedinjena Muslimanska Organizacija"
+
+# --- events
+ bosnia.1.t:0 "Chetniks raid factory"
+ bosnia.1.d:0 "The chetniks have raided a local factory in our country, they broke some machines and damaged the building"
+ bosnia.1.a:0 "Damnation"
+ bosnia.2.t:0 "Murder in a village"
+ bosnia.2.d:0 "The chetnik movement, in their aim for a Serbian Bosnia, killed a young Bosniak in a village, his body was found in the woods and locals are getting scared"
+ bosnia.2.a:0 "They will pay for this"
+ bosnia.3.t:0 "The Fall of Belgrade"
+ bosnia.3.d:0 "Belgrade, a city that survived so many wars, from the Ottomans until the Austro Hungarians, has today fallen into the hands of Bosnian soldiers. The army first launched an artillery strike on the city, almost completely destroying it before moving in with their troops, the Serbian soldiers established defense posts before the break in, but it was almost as useless, the remaining Serbian soldeirs fled into the hills outside the city, the remaining ones were either captured or killed in the warfare, a Bosnian soldier climbed up the almost destroyed Saint Sava Orthodox cathedral and put up a Bosnian flag over it, on the ground soldiers were cheering and shouting out war cries."
+ bosnia.4.a:0 "What will this mean for the Serbs?"
+ bosnia.5.b:0 "Who are the heavenly people now?"
+ bosnia.6.c:0 "This is a disaster!"
+ bosnia.7.d:0 "This is a disaster!"
+
+# --- ideas
+ bosnian_army:0 "Bosnian Army"
+ bosnian_army_desc:0 "We've been attacked many times by many enemies, and yet we were always able to drive them out of our land, our men are more than prepared to die for our homeland, no matter the cost"
+
+# --- leader traits
+ army_chief_entrenchment_expert:0 "Entrenchment Expert"
+ grand_mufti:0 "Grand Mufti Of Sarajevo"
+ khalifa:0 "Khalifa"
+ traditionalist:0 "Traditionalist"

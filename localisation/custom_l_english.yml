@@ -1,0 +1,32 @@
+﻿l_english:
+
+########  CUSTOM EFFECT TOOLTIPS  #########
+bosnia_corruption_crackdown:0 "This focus will initiate Spaho's policy to combat the §RCorruption§!."
+bosnia_ban_islamski:0 "This focus will lead Bosnia down into becoming an §CEthnostate§!"
+BOS_create_handzar:0 "Bosnia will gain a new division template as well as a few divisions from it"
+bosnia_integrate:0 "§RThis option will start the process of eradicating Serbian Culture in Bosnia§!"
+bosnia_chetniks:0 "§RThis focus will trigger a series of events to combat the Chetnik movement§!"
+BOS_railroads_tt:0 "Add 3 §YInfrastructure§! in §YBosnia§! and §YHerzegovina§!"
+BOS_fortification_tt:0 "Add §Y3 Land Forts§! in Sarajevo.\n"
+BOS_King_Tvrtko_I_tt:0 "Creates the §Y'King Tvrtko I' Battleship§! in §YMontenegro§!"
+bosnia_tito:0 "§CJosip Broz Tito§! becomes leader of the §YSocialist Republic of Bosnia§!"
+bosnia_balkan_union:0 "Forms the §YBalkan Socialist Federal Union§! and gain §CCores§! on §YYugoslav§!, §YAlbanian§!, §YBulgarian§! and §YGreek§! States. "
+bosnia_endorse_islamski:0 "This focus will lead Bosnia down into becoming an §CIslamic State§!"
+
+dzafer_arrested:0 "Arrested"
+
+BOS_greater_fascism:0 "Greater Bosniak State"
+BOS_greater_fascism_DEF:0 "the Greater Bosniak State"
+BOS_greater_fascism_ADJ:0 "Bosniak"
+
+BOS_balkan_union:0 "Balkan Socialist Federal Union"
+BOS_balkan_union_DEF:0 "the Balkan Socialist Federal Union"
+BOS_balkan_union_ADJ:0 "Balkan"
+
+BOS_islamic_state:0 "Islamic State of Bosnia"
+BOS_islamic_state_DEF:0 "Islamic State of Bosnia"
+BOS_islamic_state_ADJ:0 "Bosniak"
+
+BOS_caliphate:0 "Bosnian Caliphate"
+BOS_caliphate_DEF:0 "the Bosnian Caliphate"
+BOS_caliphate_ADJ:0 "Bosnian"
