@@ -857,6 +857,14 @@ focus_tree = {
         continue_if_invalid = no
         available_if_capitulated = no
 
+        completion_reward = {
+            CRO = {
+                add_ideas = illyrian_political_movement
+            }
+            SLV = {
+                add_ideas = illyrian_political_movement
+            }
+        }
     }
 
     focus = {
@@ -889,12 +897,18 @@ focus_tree = {
                 can_create_factions = yes
             }
             create_faction = illyrian_union
+            CRO = {
+                add_ideas = illyrian_union_movement
+            }
+            SLV = {
+                add_ideas = illyrian_union_movement
+            }
         }
     }
 
     focus = {
-        id = BOS_invite_albania
-        icon = GFX_focus_BOS_request_albania
+        id = BOS_invite_croatia
+        icon = GFX_focus_BOS_invite_croatia
         x = -2
         y = 1
         prerequisite = { focus = BOS_the_illyrian_union }
@@ -907,6 +921,10 @@ focus_tree = {
         }
  
         available = {
+            country_exists = CRO
+            CRO = {
+                neutrality > 0.45
+            }
         }
 
         bypass = {
@@ -918,15 +936,22 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            ALB = {
-               country_event = { hours = 1 id = generic.5 }
+            add_to_faction = CRO
+            hidden_effect = {
+                CRO = {
+                    add_ai_strategy = {
+                        type = alliance
+                        id = BOS
+                        value = 200
+                    }
+                }
             }
         }
     }
 
     focus = {
-        id = BOS_invite_turkey
-        icon = GFX_focus_generic_befriend_turkey
+        id = BOS_invite_slovenia
+        icon = GFX_focus_BOS_invite_slovenia
         x = 2
         y = 1
         prerequisite = { focus = BOS_the_illyrian_union }
@@ -939,6 +964,10 @@ focus_tree = {
         }
  
         available = {
+            country_exists = SLV
+            SLV = {
+                neutrality > 0.45
+            }
         }
 
         bypass = {
@@ -950,8 +979,15 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            TUR = {
-               country_event = { hours = 1 id = generic.5 }
+            add_to_faction = SLV
+            hidden_effect = {
+                SLV = {
+                    add_ai_strategy = {
+                        type = alliance
+                        id = BOS
+                        value = 200
+                    }
+                }
             }
         }
     }
@@ -961,8 +997,8 @@ focus_tree = {
         icon = GFX_goal_generic_positive_trade_relations
         x = 0
         y = 2
-        prerequisite = { focus = BOS_invite_turkey }
-        prerequisite = { focus = BOS_invite_albania }
+        prerequisite = { focus = BOS_invite_slovenia }
+        prerequisite = { focus = BOS_invite_croatia }
         relative_position_id = BOS_the_illyrian_union
 
         cost = 5
@@ -1013,17 +1049,11 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            IRQ = {
-               country_event = { hours = 1 id = generic.5 }
-            }
-            SAU = {
-               country_event = { hours = 1 id = generic.5 }
-            }
-            YEM = {
-               country_event = { hours = 1 id = generic.5 }
-            }
-            OMA = {
-               country_event = { hours = 1 id = generic.5 }
+            CRO = {
+                set_politics = {
+                    ruling_party = neutrality
+                    elections_allowed = no
+                }
             }
         }
     }

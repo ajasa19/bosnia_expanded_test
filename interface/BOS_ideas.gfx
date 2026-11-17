@@ -28,8 +28,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_croatian_nationalism"
-		texturefile = "gfx/interface/ideas/croatian_nationalism.dds"
+    name = "GFX_idea_illyrian_political_movement"
+    texturefile = "gfx/interface/ideas/illyrian_political_movement.dds"
 	}
 
 	spriteType = {

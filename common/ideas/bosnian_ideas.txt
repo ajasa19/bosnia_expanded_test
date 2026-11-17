@@ -1016,6 +1016,44 @@ ideas = {
 			}
 		}
 
+		illyrian_political_movement = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				neutrality_drift = 0.80
+			}
+		}
+
+		illyrian_union_movement = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = illyrian_political_movement
+
+			modifier = {
+				neutrality_drift = 0.80
+			}
+		}
+
 		education_reform_n = {
 
 			allowed = {

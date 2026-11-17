@@ -65,7 +65,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_BOS_universal_healthcare"
+		name = "GFX_focus_BOS_universal_healthcare_shine"
 		texturefile = "gfx/interface/goals/focus_BOS_universal_healthcare.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -97,7 +97,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_BOS_trust_west"
+		name = "GFX_focus_BOS_trust_west_shine"
 		texturefile = "gfx/interface/goals/focus_BOS_trust_west.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -609,7 +609,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_BOS_dervisevic_reforms"
+		name = "GFX_focus_BOS_dervisevic_reforms_shine"
 		texturefile = "gfx/interface/goals/focus_BOS_dervisevic_reforms.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -641,7 +641,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_BOS_ibrahim_reeforms"
+		name = "GFX_focus_BOS_ibrahim_reeforms_shine"
 		texturefile = "gfx/interface/goals/focus_BOS_ibrahim_reeforms.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1203,6 +1203,166 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_BOS_illyrian_awkaning.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_BOS_railroad_plan_shine"
+		texturefile = "gfx/interface/goals/focus_BOS_railroad_plan.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BOS_railroad_plan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BOS_railroad_plan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_BOS_empower_united_muslim_organization_shine"
+		texturefile = "gfx/interface/goals/focus_BOS_empower_united_muslim_organization.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BOS_empower_united_muslim_organization.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BOS_empower_united_muslim_organization.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_BOS_bosnian_identity_shine"
+		texturefile = "gfx/interface/goals/focus_BOS_bosnian_identity.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BOS_bosnian_identity.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BOS_bosnian_identity.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_BOS_invite_croatia_shine"
+		texturefile = "gfx/interface/goals/focus_BOS_invite_croatia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BOS_invite_croatia.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BOS_invite_croatia.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_BOS_invite_slovenia_shine"
+		texturefile = "gfx/interface/goals/focus_BOS_invite_slovenia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BOS_invite_slovenia.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BOS_invite_slovenia.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

@@ -1,0 +1,44 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            if = {
+                limit = {
+                    country_exists = YUG
+                }
+                YUG = {
+                    if = {
+                        limit = {
+                            CRO = { exists = no }
+                        }
+                        release = CRO
+                    }
+                    if = {
+                        limit = {
+                            SLV = { exists = no }
+                        }
+                        release = SLV
+                    }
+                }
+            }
+        }
+    }
+    on_daily = {
+        effect = {
+            if = {
+                limit = {
+                    OR = {
+                        tag = CRO
+                        tag = SLV
+                    }
+                    NOT = { has_country_flag = illyrian_neutrality_shifted }
+                    NOT = { has_government = neutrality }
+                    has_popularity = {
+                        ideology = neutrality
+                        popularity > 0.45
+                    }
+                }
+                country_event = { id = bosnia.100 }
+            }
+        }
+    }
+}

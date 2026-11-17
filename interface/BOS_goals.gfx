@@ -146,6 +146,16 @@ spriteTypes = {
     }
 
     SpriteType = {
+	    name = "GFX_focus_BOS_invite_croatia"
+		texturefile = "gfx/interface/goals/focus_BOS_invite_croatia.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_invite_slovenia"
+		texturefile = "gfx/interface/goals/focus_BOS_invite_slovenia.dds"
+    }
+
+    SpriteType = {
 	    name = "GFX_focus_BOS_secret_police"
 		texturefile = "gfx/interface/goals/focus_BOS_secret_police.dds"
     }
