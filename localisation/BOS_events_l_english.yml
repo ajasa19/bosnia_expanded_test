@@ -131,6 +131,16 @@
  bosnia.32.d:0 "The Serbian capital of Belgrade has once again fallen in the name of Islam. This time, we should cement our reign over the city by learning from what the Ottoman Empire did after the fall of Constantinople. In the center of the city, lies the sacred Saint Sava Cathedral, and converting it into a Mosque would cement another decade of Islamic rule in the city."
  bosnia.32.a:0 "It Shall Be A Glorious Mosque!"
  bosnia.32.b:0 "Leave it Be"
+
+ BOS_illyrian_invitation_tt:0 "Albania will be invited to join the Illyrian Union. If they accept, every member guarantees their independence. If they refuse, we decide what happens next."
+ bosnia.200.t:0 "Invitation to the Illyrian Union"
+ bosnia.200.d:0 "Bosnia has invited us to join the Illyrian Union. Members would guarantee our independence, but we would be bound to their alliance."
+ bosnia.200.a:0 "Accept the invitation"
+ bosnia.200.b:0 "Decline"
+ bosnia.201.t:0 "Albania Rejects our Invitation"
+ bosnia.201.d:0 "Albania has refused to join the Illyrian Union. We can leave them to their own affairs or make them join by force."
+ bosnia.201.a:0 "Let them stand alone"
+ bosnia.201.b:0 "They will join by force"
  
  #News
 

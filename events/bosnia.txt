@@ -649,6 +649,65 @@ country_event = {
     }
 }
     
+# Albania receives the invitation (ROOT = Albania, FROM = Bosnia)
+country_event = {
+    id = bosnia.200
+    title = bosnia.200.t
+    desc = bosnia.200.d
+    picture = GFX_report_event_generic_handshake
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.200.a
+        ai_chance = { base = 50 }
+        FROM = {
+            add_to_faction = ROOT
+            give_guarantee = ROOT
+        }
+        every_other_country = {
+            limit = {
+                is_in_faction_with = FROM
+                NOT = { tag = FROM }
+            }
+            give_guarantee = ROOT
+        }
+    }
+
+    option = {
+        name = bosnia.200.b
+        ai_chance = { base = 50 }
+        FROM = {
+            country_event = { id = bosnia.201 hours = 1 }
+        }
+    }
+}
+
+# Bosnia is told Albania refused (ROOT = Bosnia, FROM = Albania)
+country_event = {
+    id = bosnia.201
+    title = bosnia.201.t
+    desc = bosnia.201.d
+    picture = GFX_report_event_generic_read_write
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.201.a
+        add_political_power = 100
+    }
+
+    option = {
+        name = bosnia.201.b
+        create_wargoal = {
+            type = puppet_wargoal_focus
+            target = FROM
+            expire = 0
+        }
+    }
+}
   
     
 

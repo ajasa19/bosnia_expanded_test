@@ -993,7 +993,7 @@ focus_tree = {
     }
 
     focus = {
-        id = BOS_illyrian_union_trade_system
+        id = BOS_salona_conference
         icon = GFX_goal_generic_positive_trade_relations
         x = 0
         y = 2
@@ -1020,16 +1020,28 @@ focus_tree = {
 
         completion_reward = {
             add_stability = 0.1
+            CRO = {
+                set_politics = {
+                    ruling_party = neutrality
+                    elections_allowed = no
+                }
+            }
+            SLV = {
+                set_politics = {
+                    ruling_party = neutrality
+                    elections_allowed = no
+                }
+            }
         }
     }
 
     focus = {
-        id = BOS_invite_the_arab_world
+        id = BOS_reopen_old_wounds
         icon = GFX_goal_generic_major_alliance
         x = -2
         y = 1
-        prerequisite = { focus = BOS_illyrian_union_trade_system }
-        relative_position_id = BOS_illyrian_union_trade_system
+        prerequisite = { focus = BOS_salona_conference }
+        relative_position_id = BOS_salona_conference
 
         cost = 5
 
@@ -1049,22 +1061,23 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            CRO = {
-                set_politics = {
-                    ruling_party = neutrality
-                    elections_allowed = no
-                }
+            add_state_core = 105
+            create_wargoal = {
+                type = take_state_focus
+                target = YUG
+                expire = 0
+                generator = { 105 }
             }
         }
     }
 
     focus = {
-        id = BOS_eastern_membership
+        id = BOS_demand_the_return_of_coastal_territory
         icon = GFX_goal_generic_intelligence_exchange
         x = 2
         y = 1
-        prerequisite = { focus = BOS_illyrian_union_trade_system }
-        relative_position_id = BOS_illyrian_union_trade_system
+        prerequisite = { focus = BOS_salona_conference }
+        relative_position_id = BOS_salona_conference
 
         cost = 5
 
@@ -1094,13 +1107,50 @@ focus_tree = {
     }
 
     focus = {
+        id = BOS_reclaim_southern_Illyria
+        icon = GFX_goal_generic_territory_or_war
+        x = 0
+        y = 1
+        prerequisite = { focus = BOS_salona_conference }
+        relative_position_id = BOS_salona_conference
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 4
+        }
+
+        available = {
+        }
+
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        completion_reward = {
+            add_state_core = 44
+            if = {
+                limit = { country_exists = ALB }
+                custom_effect_tooltip = BOS_illyrian_invitation_tt
+                ALB = {
+                    country_event = { id = bosnia.200 hours = 1 }
+                }
+            }
+        }
+    }
+
+    focus = {
         id = BOS_anti_colonialist_policy
         icon = GFX_goal_generic_forceful_treaty
         x = 0
         y = 2
-        prerequisite = { focus = BOS_eastern_membership }
-        prerequisite = { focus = BOS_invite_the_arab_world }
-        relative_position_id = BOS_illyrian_union_trade_system
+        prerequisite = { focus = BOS_demand_the_return_of_coastal_territory }
+        prerequisite = { focus = BOS_reopen_old_wounds }
+        prerequisite = { focus = BOS_reclaim_southern_Illyria }
+        relative_position_id = BOS_salona_conference
 
         cost = 5
 
