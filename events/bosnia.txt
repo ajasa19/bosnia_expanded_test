@@ -673,6 +673,24 @@ country_event = {
             }
             give_guarantee = ROOT
         }
+
+        if = {
+            limit = { country_exists = ITA }
+            ITA = {
+                add_ai_strategy = {
+                    type = conquer
+                    id = ALB
+                    value = -200
+                }
+                if = {
+                    limit = { has_wargoal_against = ALB }
+                    remove_wargoal = {
+                        type = all
+                        target = ALB
+                    }
+                }
+            }
+        }
     }
 
     option = {

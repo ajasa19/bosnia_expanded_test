@@ -565,7 +565,7 @@ focus_tree = {
         icon = GFX_goal_generic_fortify_city
         x = -2
         y = 3
-        prerequisite = { focus = BOS_corruption_crackdown focus = BOS_united_against_fascism focus = BOS_anti_colonialist_policy }
+        prerequisite = { focus = BOS_corruption_crackdown focus = BOS_united_against_fascism focus = BOS_form_illyria }
         relative_position_id = BOS_join_the_allies
 
         cost = 5
@@ -1037,8 +1037,8 @@ focus_tree = {
 
     focus = {
         id = BOS_reopen_old_wounds
-        icon = GFX_goal_generic_major_alliance
-        x = -2
+        icon = GFX_focus_BOS_reopen_old_wounds
+        x = 0
         y = 1
         prerequisite = { focus = BOS_salona_conference }
         relative_position_id = BOS_salona_conference
@@ -1072,8 +1072,8 @@ focus_tree = {
     }
 
     focus = {
-        id = BOS_demand_the_return_of_coastal_territory
-        icon = GFX_goal_generic_intelligence_exchange
+        id = BOS_reclaim_coastal_territory
+        icon = GFX_focus_BOS_reclaim_coastal_territory
         x = 2
         y = 1
         prerequisite = { focus = BOS_salona_conference }
@@ -1089,6 +1089,9 @@ focus_tree = {
         }
 
         bypass = {
+            736 = { is_owned_by = ROOT }
+            852 = { is_owned_by = ROOT }
+            163 = { is_owned_by = ROOT }
 
         }
 
@@ -1097,19 +1100,19 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            PER = {
-               country_event = { hours = 1 id = generic.5 }
-            }
-            AFG = {
-               country_event = { hours = 1 id = generic.5 }
+            create_wargoal = {
+                type = take_state_focus
+                target = ITA
+                expire = 0
+                generator = { 736 852 163 }
             }
         }
     }
 
     focus = {
-        id = BOS_reclaim_southern_Illyria
-        icon = GFX_goal_generic_territory_or_war
-        x = 0
+        id = BOS_invite_albania
+        icon = GFX_focus_BOS_invite_albania
+        x = -2
         y = 1
         prerequisite = { focus = BOS_salona_conference }
         relative_position_id = BOS_salona_conference
@@ -1124,6 +1127,11 @@ focus_tree = {
         }
 
         bypass = {
+            OR = {
+                ALB = { is_in_faction_with = ROOT }
+                ALB = { is_subject_of = ROOT }
+                44 = { is_owned_by = ROOT }
+            }
         }
 
         cancel_if_invalid = yes
@@ -1143,13 +1151,13 @@ focus_tree = {
     }
 
     focus = {
-        id = BOS_anti_colonialist_policy
-        icon = GFX_goal_generic_forceful_treaty
+        id = BOS_form_illyria
+        icon = GFX_focus_BOS_form_illyria
         x = 0
         y = 2
-        prerequisite = { focus = BOS_demand_the_return_of_coastal_territory }
+        prerequisite = { focus = BOS_reclaim_coastal_territory }
         prerequisite = { focus = BOS_reopen_old_wounds }
-        prerequisite = { focus = BOS_reclaim_southern_Illyria }
+        prerequisite = { focus = BOS_invite_albania }
         relative_position_id = BOS_salona_conference
 
         cost = 5
@@ -1170,108 +1178,39 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            ENG = {
-                add_opinion_modifier = {
-                    target = ROOT
-                    modifier = large_decrease
+            if = {
+                limit = {
+                    country_exists = CRO
+                    CRO = { is_in_faction_with = ROOT }
+                }
+                annex_country = {
+                    target = CRO
+                    transfer_troops = yes
                 }
             }
-            FRA = {
-                add_opinion_modifier = {
-                    target = ROOT
-                    modifier = large_decrease
+            if = {
+                limit = {
+                    country_exists = SLV
+                    SLV = { is_in_faction_with = ROOT }
+                }
+                annex_country = {
+                    target = SLV
+                    transfer_troops = yes
                 }
             }
-            ITA = {
-                add_opinion_modifier = {
-                    target = ROOT
-                    modifier = large_decrease
-                } 
-            }
-            POR = {
-                add_opinion_modifier = {
-                    target = ROOT
-                    modifier = large_decrease
-                } 
-            }
-            SPR = {
-                add_opinion_modifier = {
-                    target = ROOT
-                    modifier = large_decrease
-                } 
+            if = {
+                limit = {
+                    country_exists = ALB
+                    ALB = { is_in_faction_with = ROOT }
+                }
+                annex_country = {
+                    target = ALB
+                    transfer_troops = yes
+                }
             }
 
-            add_stability = 0.05
-        }
-    }
-
-    focus = {
-        id = BOS_liberate_muslims_under_anglo_rule
-        icon = GFX_focus_attack_britain
-        x = -2
-        y = 1
-        prerequisite = { focus = BOS_anti_colonialist_policy }
-        relative_position_id = BOS_anti_colonialist_policy
-
-        cost = 5
-
-        ai_will_do = {
-            factor = 4
-        }
- 
-        available = {
-        }
-
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        completion_reward = {
-            create_wargoal = {
-                type = take_state_focus
-                target = ENG
-                expire = 0
-                generator = { 454 } # Athens
-            }
-        }
-    }
-
-    focus = {
-        id = BOS_liberate_muslims_under_french_rule
-        icon = GFX_focus_attack_france
-        x = 2
-        y = 1
-        prerequisite = { focus = BOS_anti_colonialist_policy }
-        relative_position_id = BOS_anti_colonialist_policy
-
-        cost = 5
-
-        ai_will_do = {
-            factor = 4
-        }
- 
-        available = {
-        }
-
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        completion_reward = {
-            create_wargoal = {
-                type = take_state_focus
-                target = FRA
-                expire = 0
-                generator = { 554 } # Athens
-            }
+            every_owned_state = { add_core_of = ROOT }
+            set_cosmetic_tag = BOS_illyria
         }
     }
 

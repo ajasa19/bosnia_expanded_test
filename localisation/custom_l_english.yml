@@ -30,3 +30,7 @@ BOS_islamic_state_ADJ:0 "Bosniak"
 BOS_caliphate:0 "Bosnian Caliphate"
 BOS_caliphate_DEF:0 "the Bosnian Caliphate"
 BOS_caliphate_ADJ:0 "Bosnian"
+
+BOS_illyria:0 "Illyria"
+BOS_illyria_DEF:0 "Illyria"
+BOS_illyria_ADJ:0 "Illyrian"

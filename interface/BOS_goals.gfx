@@ -214,5 +214,25 @@ spriteTypes = {
 	    name = "GFX_focus_BOS_illyrian_awkaning"
 		texturefile = "gfx/interface/goals/focus_BOS_illyrian_awkaning.dds"
     }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_reopen_old_wounds"
+		texturefile = "gfx/interface/goals/focus_BOS_reopen_old_wounds.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_reclaim_coastal_territory"
+		texturefile = "gfx/interface/goals/focus_BOS_reclaim_coastal_territory.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_invite_albania"
+		texturefile = "gfx/interface/goals/focus_BOS_invite_albania.dds"
+    }
+
+    SpriteType = {
+	    name = "GFX_focus_BOS_form_illyria"
+		texturefile = "gfx/interface/goals/focus_BOS_form_illyria.dds"
+    }
     
 }

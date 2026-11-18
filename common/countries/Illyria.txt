@@ -1,0 +1,4 @@
+BOS_illyria = {
+    color = rgb { 90 140 180 }
+    color_ui = rgb { 90 140 180 }
+}
