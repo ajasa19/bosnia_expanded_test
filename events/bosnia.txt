@@ -726,6 +726,49 @@ country_event = {
         }
     }
 }
+
+
+country_event = {
+    id = bosnia.202
+    title = bosnia.202.t
+    desc = bosnia.202.d
+    picture = GFX_country_event_serbian_question
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.202.a
+
+        ai_chance = {
+            factor = 0
+        }
+
+        FROM = {
+            set_state_owner = 105
+        }
+    }
+
+    option = {
+        name = bosnia.202.b
+
+        ai_chance = {
+            factor = 100
+        }
+
+        FROM = {
+            add_war_support = 0.05
+
+            create_wargoal = {
+                type = take_state_focus
+                target = ROOT
+                expire = 0
+                generator = { 105 }
+            }
+        }
+    }
+}
+
   
     
 
