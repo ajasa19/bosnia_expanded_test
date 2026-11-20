@@ -4,41 +4,56 @@ on_actions = {
             if = {
                 limit = {
                     country_exists = YUG
+                    has_start_date < 1939.1.1
                 }
                 YUG = {
+                    # 1. Clear Yugoslav troops out of the lands being split off
+                    delete_unit = { state = 103 }   # Croatia
+                    delete_unit = { state = 109 }   # Eastern Croatia
+                    delete_unit = { state = 102 }   # North-Eastern Slovenia
+                    delete_unit = { state = 853 }   # Ljubljana
+                    delete_unit = { state = 104 }   # Bosnia
+                    delete_unit = { state = 804 }   # Herzegovina
+
+                    # 2. Make Croatia and Slovenia independent
                     if = {
-                        limit = {
-                            CRO = { exists = no }
-                        }
+                        limit = { NOT = { country_exists = CRO } }
                         release = CRO
                     }
                     if = {
-                        limit = {
-                            SLV = { exists = no }
-                        }
+                        limit = { NOT = { country_exists = SLV } }
                         release = SLV
                     }
+
+                    # 3. Hand over divisions out of the 15 that are left:
+                    #    Croatia 4, Slovenia 1, Bosnia 2 (Yugoslavia keeps 8)
+                    transfer_units_fraction = {
+                        target = CRO
+                        size = 0.27            # 15 x 0.27 = 4.05
+                        stockpile_ratio = 0
+                        army_ratio = 0.27
+                        navy_ratio = 0
+                        air_ratio = 0
+                    }
+                    transfer_units_fraction = {
+                        target = SLV
+                        size = 0.10            # 11 x 0.10 = 1.1
+                        stockpile_ratio = 0
+                        army_ratio = 0.10
+                        navy_ratio = 0
+                        air_ratio = 0
+                    }
+                    transfer_units_fraction = {
+                        target = BOS
+                        size = 0.21            # 10 x 0.21 = 2.1
+                        stockpile_ratio = 0
+                        army_ratio = 0.21
+                        navy_ratio = 0
+                        air_ratio = 0
+                    }
                 }
             }
         }
     }
-    on_daily = {
-        effect = {
-            if = {
-                limit = {
-                    OR = {
-                        tag = CRO
-                        tag = SLV
-                    }
-                    NOT = { has_country_flag = illyrian_neutrality_shifted }
-                    NOT = { has_government = neutrality }
-                    has_popularity = {
-                        ideology = neutrality
-                        popularity > 0.45
-                    }
-                }
-                country_event = { id = bosnia.100 }
-            }
-        }
-    }
+
 }

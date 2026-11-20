@@ -1031,7 +1031,7 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				neutrality_drift = 0.80
+				neutrality_drift = 0.10
 			}
 		}
 
@@ -1050,7 +1050,7 @@ ideas = {
 			picture = illyrian_political_movement
 
 			modifier = {
-				neutrality_drift = 0.80
+				neutrality_drift = 0.10
 			}
 		}
 
