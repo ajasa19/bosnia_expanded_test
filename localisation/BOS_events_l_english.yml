@@ -141,7 +141,12 @@
  bosnia.201.d:0 "Albania has refused to join the Illyrian Union. We can leave them to their own affairs or make them join by force."
  bosnia.201.a:0 "Let them stand alone"
  bosnia.201.b:0 "They will join by force"
- 
+
+ bosnia.202.t:0 "Bosnia Demands Sanjak"
+ bosnia.202.d:0 "The Bosnian government has delivered an extraordinary diplomatic demand. They insist that Montenegro be surrendered to Bosnia, citing historical claims and their supposed right to the territory. Accepting such a demand would be a humiliating blow to our national sovereignty."
+ bosnia.202.a:0 "Peace is worth the price."
+ bosnia.202.b:0 "The Muslim's demands are ludicrous!" 
+
  #News
 
  bosnia_news.1.t:0 "The Fall of Belgrade"
