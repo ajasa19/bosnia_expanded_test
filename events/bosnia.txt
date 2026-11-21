@@ -769,6 +769,30 @@ country_event = {
     }
 }
 
+country_event = {
+    id = bosnia.203
+    title = bosnia.203.t
+    desc = bosnia.203.d
+    picture = GFX_report_event_generic_handshake
+    is_triggered_only = yes
+
+    option = {
+        name = bosnia.203.a
+        ai_chance = { base = 50 }
+        trigger = { has_global_event_target = BOS_dalmatia }
+        puppet = event_target:BOS_dalmatia
+    }
+
+    option = {
+        name = bosnia.203.b
+        ai_chance = { base = 50 }
+        trigger = { has_global_event_target = BOS_dalmatia }
+        annex_country = {
+            target = event_target:BOS_dalmatia
+            transfer_troops = yes
+        }
+    }
+}
   
     
 

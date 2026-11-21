@@ -208,7 +208,7 @@ focus_tree = {
     focus = {
         id = BOS_democratic_forces
         icon = GFX_focus_generic_military_mission
-        x = -2
+        x = -1
         y = 1
         prerequisite = { focus = BOS_economic_prosperity }
         relative_position_id = BOS_economic_prosperity
@@ -240,7 +240,7 @@ focus_tree = {
     focus = {
         id = BOS_universal_healthcare
         icon = GFX_focus_BOS_universal_healthcare
-        x = 2
+        x = 1
         y = 1
         prerequisite = { focus = BOS_economic_prosperity }
         relative_position_id = BOS_economic_prosperity
@@ -565,7 +565,7 @@ focus_tree = {
         icon = GFX_goal_generic_fortify_city
         x = -2
         y = 3
-        prerequisite = { focus = BOS_corruption_crackdown focus = BOS_united_against_fascism focus = BOS_form_illyria }
+        prerequisite = { focus = BOS_corruption_crackdown focus = BOS_united_against_fascism }
         relative_position_id = BOS_join_the_allies
 
         cost = 5
@@ -629,7 +629,7 @@ focus_tree = {
     focus = {
         id = BOS_ways_of_the_old
         icon = GFX_goal_generic_neutrality_focus
-        x = -25
+        x = -19
         y = 1
         mutually_exclusive = { focus = BOS_bmo_congress }
         prerequisite = { focus = BOS_sign_sarajevo_accords }
@@ -698,7 +698,7 @@ focus_tree = {
         id = BOS_education_reform_n
         icon = GFX_focus_BOS_education_reform_n
         x = -2
-        y = 2
+        y = 1
         prerequisite = { focus = BOS_empower_united_muslim_organization }
         relative_position_id = BOS_empower_united_muslim_organization
 
@@ -732,7 +732,7 @@ focus_tree = {
         id = BOS_strengthen_democracy
         icon = GFX_goal_support_democracy
         x = 0
-        y = 2
+        y = 1
         prerequisite = { focus = BOS_empower_united_muslim_organization }
         relative_position_id = BOS_empower_united_muslim_organization
 
@@ -766,7 +766,7 @@ focus_tree = {
         id = BOS_bosnian_identity
         icon = GFX_focus_BOS_bosnian_identity
         x = 2
-        y = 2
+        y = 1
         prerequisite = { focus = BOS_empower_united_muslim_organization }
         relative_position_id = BOS_empower_united_muslim_organization
 
@@ -799,8 +799,8 @@ focus_tree = {
     focus = {
         id = BOS_one_and_only
         icon = GFX_focus_BOS_one_and_only
-        x = -1
-        y = 3
+        x = -4
+        y = 2
         prerequisite = { focus = BOS_bosnian_identity }
         prerequisite = { focus = BOS_strengthen_democracy }
         prerequisite = { focus = BOS_education_reform_n }
@@ -831,9 +831,9 @@ focus_tree = {
 
     focus = {
         id = BOS_bosnian_awakening
-        icon = GFX_goal_generic_nationalism
-        x = -1
-        y = 4
+        icon = GFX_goal_generic_national_unity
+        x = 0
+        y = 1
         prerequisite = { focus = BOS_one_and_only }
         relative_position_id = BOS_one_and_only
 
@@ -863,9 +863,9 @@ focus_tree = {
 
     focus = {
         id = BOS_establish_old_connections
-        icon = GFX_goal_generic_diplomacy
-        x = -1
-        y = 5
+        icon = GFX_goal_generic_improve_relations
+        x = 0
+        y = 1
         prerequisite = { focus = BOS_bosnian_awakening }
         relative_position_id = BOS_bosnian_awakening
 
@@ -924,8 +924,8 @@ focus_tree = {
     focus = {
         id = BOS_travnik_convention
         icon = GFX_goal_generic_political_pressure
-        x = -1
-        y = 6
+        x = 0
+        y = 1
         prerequisite = { focus = BOS_establish_old_connections }
         relative_position_id = BOS_establish_old_connections
 
@@ -957,8 +957,9 @@ focus_tree = {
         id = BOS_respect_the_1909_borders
         icon = GFX_goal_generic_defence
         x = -2
-        y = 7
+        y = 1
         prerequisite = { focus = BOS_travnik_convention }
+        mutually_exclusive = { focus = BOS_sanjak_declaration }
         relative_position_id = BOS_travnik_convention
 
         cost = 5
@@ -986,9 +987,9 @@ focus_tree = {
 
     focus = {
         id = BOS_seek_neighbouring_recognition
-        icon = GFX_goal_generic_diplomacy
-        x = -2
-        y = 8
+        icon = GFX_goal_generic_improve_relations
+        x = 0
+        y = 1
         prerequisite = { focus = BOS_respect_the_1909_borders }
         relative_position_id = BOS_respect_the_1909_borders
 
@@ -1015,17 +1016,19 @@ focus_tree = {
 
             if = {
                 limit = { country_exists = YUG }
-                create_non_aggression_pact = {
-                    target = YUG
-                    days = 3650
+                diplomatic_relation = {
+                    country = YUG
+                    relation = non_aggression_pact
+                    active = yes
                 }
             }
 
             if = {
                 limit = { country_exists = CRO }
-                create_non_aggression_pact = {
-                    target = CRO
-                    days = 3650
+                diplomatic_relation = {
+                    country = CRO
+                    relation = non_aggression_pact
+                    active = yes
                 }
             }
         }
@@ -1034,9 +1037,9 @@ focus_tree = {
 
     focus = {
         id = BOS_seek_foreign_guarantees
-        icon = GFX_goal_generic_diplomatic_treaty
-        x = -2
-        y = 9
+        icon = GFX_goal_generic_alliance
+        x = 0
+        y = 1
         prerequisite = { focus = BOS_seek_neighbouring_recognition }
         relative_position_id = BOS_seek_neighbouring_recognition
 
@@ -1080,8 +1083,8 @@ focus_tree = {
     focus = {
         id = BOS_seek_alliances
         icon = GFX_goal_generic_major_alliance
-        x = -2
-        y = 10
+        x = 0
+        y = 1
         prerequisite = { focus = BOS_seek_foreign_guarantees }
         relative_position_id = BOS_seek_foreign_guarantees
 
@@ -1109,7 +1112,7 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            add_to_faction = GER
+            GER = { add_to_faction = ROOT }
         }
     }
 
@@ -1117,9 +1120,10 @@ focus_tree = {
     focus = {
         id = BOS_sanjak_declaration
         icon = GFX_goal_generic_more_territorial_claims
-        x = 0
-        y = 7
+        x = 2
+        y = 1
         prerequisite = { focus = BOS_travnik_convention }
+        mutually_exclusive = { focus = BOS_respect_the_1909_borders }
         relative_position_id = BOS_travnik_convention
 
         cost = 5
@@ -1148,8 +1152,8 @@ focus_tree = {
     focus = {
         id = BOS_contact_sanjak_representatives
         icon = GFX_goal_generic_national_unity
-        x = 0
-        y = 8
+        x = -1
+        y = 1
         prerequisite = { focus = BOS_sanjak_declaration }
         relative_position_id = BOS_sanjak_declaration
 
@@ -1181,7 +1185,7 @@ focus_tree = {
         id = BOS_demand_sanjak
         icon = GFX_goal_generic_more_territorial_claims
         x = 0
-        y = 9
+        y = 1
         prerequisite = { focus = BOS_contact_sanjak_representatives }
         relative_position_id = BOS_contact_sanjak_representatives
 
@@ -1192,7 +1196,7 @@ focus_tree = {
         }
 
         available = {
-            country_exists = SER
+            country_exists = YUG
         }
 
         bypass = {
@@ -1204,7 +1208,7 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            SER = {
+            YUG = {
                 country_event = {
                     id = bosnia.202
                     hours = 1
@@ -1216,10 +1220,10 @@ focus_tree = {
     focus = {
         id = BOS_receive_dalmation_representatives
         icon = GFX_goal_generic_national_unity
-        x = 0
-        y = 10
-        prerequisite = { focus = BOS_demand_sanjak }
-        relative_position_id = BOS_demand_sanjak
+        x = 1
+        y = 1
+        prerequisite = { focus = BOS_sanjak_declaration }
+        relative_position_id = BOS_sanjak_declaration
 
         cost = 5
 
@@ -1246,9 +1250,9 @@ focus_tree = {
         id = BOS_support_dalmatia
         icon = GFX_goal_generic_more_territorial_claims
         x = 0
-        y = 11
-        prerequisite = { focus = BOS_contact_dalmation_representatives }
-        relative_position_id = BOS_contact_dalmation_representatives
+        y = 1
+        prerequisite = { focus = BOS_receive_dalmation_representatives }
+        relative_position_id = BOS_receive_dalmation_representatives
 
         cost = 5
 
@@ -1271,16 +1275,16 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
+
+            custom_effect_tooltip = BOS_dalmatia_independence_tt
+
             hidden_effect = {
 
-                # Create an independent Dalmatian country.
-                # The game assigns it a dynamic D## tag.
                 create_dynamic_country = {
                     original_tag = CRO
                     copy_tag = CRO
+                    save_global_event_target_as = BOS_dalmatia
 
-                    # Remove inherited Croatian cores
-                    # except for Dalmatia.
                     every_core_state = {
                         limit = {
                             NOT = { state = 103 }
@@ -1288,21 +1292,51 @@ focus_tree = {
                         remove_core_of = PREV
                     }
 
-                    # Give Dalmatia its territory.
                     add_state_core = 103
                     transfer_state = 103
-                    set_capital = {
-                        state = 103
+                    set_capital = { state = 103 }
+                    set_cosmetic_tag = dalmatia
+
+                    division_template = {
+                        name = "Dalmatian Revolutionary"
+                        priority = 1
+                        division_names_group = YUG_INF_01
+                        regiments = {
+                            infantry = { x = 0 y = 0 }
+                            infantry = { x = 0 y = 1 }
+                            infantry = { x = 0 y = 2 }
+                            infantry = { x = 1 y = 0 }
+                        }
                     }
 
-                    # Give the new country its Dalmatian name.
-                    set_cosmetic_tag = DAL
-
-                    # Save its dynamically assigned identity.
-                    save_global_event_target_as = BOS_dalmatia
+                    random_owned_controlled_state = {
+                        create_unit = {
+                            division = "name = \"1st Dalmatian Division\" division_template = \"Dalmatian Revolutionary\" start_experience_factor = 0.9"
+                            owner = PREV
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        create_unit = {
+                            division = "name = \"2nd Dalmatian Division\" division_template = \"Dalmatian Revolutionary\" start_experience_factor = 0.9"
+                            owner = PREV
+                        }
+                    }
                 }
 
-                # Dalmatia declares war on Croatia.
+                event_target:BOS_dalmatia = {
+                    set_politics = {
+                        ruling_party = neutrality
+                        elections_allowed = no
+                    }
+                    set_popularities = {
+                        neutrality = 90
+                        democratic = 10
+                        fascism = 0
+                        communism = 0
+                    }
+                }
+
+                #Dalmatia declares war on Croatia
                 event_target:BOS_dalmatia = {
                     declare_war_on = {
                         target = CRO
@@ -1310,21 +1344,51 @@ focus_tree = {
                     }
                 }
 
-                # Bosnia immediately joins Dalmatia's war.
-                add_to_war = {
-                    targeted_alliance = event_target:BOS_dalmatia
-                    enemy = CRO
-                    single_target_only = yes
+                # Bosnia declares its own war on Croatia, same enemy
+                declare_war_on = {
+                    target = CRO
+                    type = annex_everything
                 }
             }
         }
     }
 
     focus = {
+        id = BOS_decide_dalmatias_fate
+        icon = GFX_goal_generic_national_unity
+        x = 0
+        y = 1
+        prerequisite = { focus = BOS_support_dalmatia }
+        relative_position_id = BOS_support_dalmatia
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 4
+        }
+
+        available = {
+            has_global_event_target = BOS_dalmatia
+            event_target:BOS_dalmatia = { exists = yes }
+        }
+
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        completion_reward = {
+            country_event = { id = bosnia.203 }
+        }
+    }
+
+    focus = {
         id = BOS_illyrian_awkaning
         icon = GFX_focus_BOS_illyrian_awkaning
-        x = 3
-        y = 3
+        x = 4
+        y = 2
         prerequisite = { focus = BOS_bosnian_identity }
         prerequisite = { focus = BOS_strengthen_democracy }
         prerequisite = { focus = BOS_education_reform_n }
@@ -1361,8 +1425,8 @@ focus_tree = {
     focus = {
         id = BOS_the_illyrian_union
         icon = GFX_focus_generic_strike_at_democracy1
-        x = 3
-        y = 4
+        x = 0
+        y = 1
         prerequisite = { focus = BOS_illyrian_awkaning }
         relative_position_id = BOS_illyrian_awkaning
 
@@ -1400,8 +1464,8 @@ focus_tree = {
     focus = {
         id = BOS_invite_croatia
         icon = GFX_focus_BOS_invite_croatia
-        x = 1
-        y = 5
+        x = -2
+        y = 1
         prerequisite = { focus = BOS_the_illyrian_union }
         relative_position_id = BOS_the_illyrian_union
 
@@ -1443,8 +1507,8 @@ focus_tree = {
     focus = {
         id = BOS_invite_slovenia
         icon = GFX_focus_BOS_invite_slovenia
-        x = 5
-        y = 5
+        x = 2
+        y = 1
         prerequisite = { focus = BOS_the_illyrian_union }
         relative_position_id = BOS_the_illyrian_union
 
@@ -1486,8 +1550,8 @@ focus_tree = {
     focus = {
         id = BOS_salona_conference
         icon = GFX_goal_generic_positive_trade_relations
-        x = 3
-        y = 6
+        x = 0
+        y = 2
         prerequisite = { focus = BOS_invite_slovenia }
         prerequisite = { focus = BOS_invite_croatia }
         relative_position_id = BOS_the_illyrian_union
@@ -1529,8 +1593,8 @@ focus_tree = {
     focus = {
         id = BOS_reopen_old_wounds
         icon = GFX_focus_BOS_reopen_old_wounds
-        x = 3
-        y = 7
+        x = -2
+        y = 1
         prerequisite = { focus = BOS_salona_conference }
         relative_position_id = BOS_salona_conference
 
@@ -1565,8 +1629,8 @@ focus_tree = {
     focus = {
         id = BOS_reclaim_coastal_territory
         icon = GFX_focus_BOS_reclaim_coastal_territory
-        x = 5
-        y = 7
+        x = 0
+        y = 1
         prerequisite = { focus = BOS_salona_conference }
         relative_position_id = BOS_salona_conference
 
@@ -1603,8 +1667,8 @@ focus_tree = {
     focus = {
         id = BOS_invite_albania
         icon = GFX_focus_BOS_invite_albania
-        x = 7
-        y = 7
+        x = 2
+        y = 1
         prerequisite = { focus = BOS_salona_conference }
         relative_position_id = BOS_salona_conference
 
@@ -1644,8 +1708,8 @@ focus_tree = {
     focus = {
         id = BOS_form_illyria
         icon = GFX_focus_BOS_form_illyria
-        x = 3
-        y = 8
+        x = 0
+        y = 3
         prerequisite = { focus = BOS_reclaim_coastal_territory }
         prerequisite = { focus = BOS_reopen_old_wounds }
         prerequisite = { focus = BOS_invite_albania }

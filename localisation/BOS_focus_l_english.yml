@@ -297,6 +297,8 @@
  BOS_support_dalmatia:0 "Support Dalmatia"
  BOS_support_dalmatia_desc:0 "Dalmatian separatists await our commitment before declaring independence. We must prepare our armed forces to support their uprising and open a new front along the Una."
 
+ BOS_decide_dalmatias_fate:0 "Decide Dalmatias Fate"
+ BOS_decide_dalmatias_fate_desc:0 "With Croatia pushed back, Dalmatia stands free, but its future is still undecided. We can bind it to us as a loyal partner, or bring it fully into the Bosnian state."
 
  BOS_illyrian_awkaning:0 "Illyrian Awakening"
  BOS_illyrian_awkaning_desc:0 "The memory of ancient Illyria has endured through centuries of foreign rule. As nations rediscover their histories, we too must embrace our past. The Illyrian idea offers the foundation for a movement capable of uniting the peoples of our region."
@@ -317,3 +319,4 @@
  BOS_form_illyria:0 "Form Illyria"
  BOS_form_illyria_desc:0 "From the ruins of Austria-Hungary, Bosnia emerged fractured and uncertain. Through reform, consolidation, and a renewed embrace of our Illyrian heritage, we have become the centre of a growing alliance. Now, the time has come to unite our peoples beneath the banner of Illyria."
  
+ BOS_dalmatia_independence_tt:0 "Dalmatia declares independence §Rboth Dalmatia and Bosnia will go to war with Croatia§!."
