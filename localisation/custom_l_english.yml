@@ -34,3 +34,7 @@ BOS_caliphate_ADJ:0 "Bosnian"
 BOS_illyria:0 "Illyria"
 BOS_illyria_DEF:0 "Illyria"
 BOS_illyria_ADJ:0 "Illyrian"
+
+BOS_kingdom:0 "Kingdom of Bosnia"
+BOS_kingdom_DEF:0 "the Kingdom of Bosnia"
+BOS_kingdom_ADJ:0 "Bosnian"

@@ -46,7 +46,7 @@ focus_tree = {
     focus = {
         id = BOS_bmo_congress
         icon = GFX_focus_BOS_bmo_congress
-        x = -6
+        x = -19
         y = 1
         mutually_exclusive = { focus = BOS_ways_of_the_old }
         prerequisite = { focus = BOS_sign_sarajevo_accords }
@@ -273,7 +273,7 @@ focus_tree = {
         id = BOS_corruption_crackdown
         icon = GFX_focus_rom_parties_end
         x = 0
-        y = 2
+        y = 3
         prerequisite = { focus = BOS_universal_healthcare }
         prerequisite = { focus = BOS_democratic_forces }
         relative_position_id = BOS_economic_prosperity
@@ -563,9 +563,9 @@ focus_tree = {
     focus = {
         id = BOS_prepare_for_storm
         icon = GFX_goal_generic_fortify_city
-        x = -2
-        y = 3
-        prerequisite = { focus = BOS_corruption_crackdown focus = BOS_united_against_fascism }
+        x = 0
+        y = 5
+        prerequisite = { focus = BOS_corruption_crackdown focus = BOS_united_against_fascism focus = BOS_seek_alliances }
         relative_position_id = BOS_join_the_allies
 
         cost = 5
@@ -629,7 +629,7 @@ focus_tree = {
     focus = {
         id = BOS_ways_of_the_old
         icon = GFX_goal_generic_neutrality_focus
-        x = -19
+        x = -6
         y = 1
         mutually_exclusive = { focus = BOS_bmo_congress }
         prerequisite = { focus = BOS_sign_sarajevo_accords }
@@ -1151,7 +1151,7 @@ focus_tree = {
 
     focus = {
         id = BOS_contact_sanjak_representatives
-        icon = GFX_goal_generic_national_unity
+        icon = GFX_focus_BOS_contact_sanjak_representatives
         x = -1
         y = 1
         prerequisite = { focus = BOS_sanjak_declaration }
@@ -1183,7 +1183,7 @@ focus_tree = {
 
     focus = {
         id = BOS_demand_sanjak
-        icon = GFX_goal_generic_more_territorial_claims
+        icon = GFX_focus_BOS_demand_sanjak
         x = 0
         y = 1
         prerequisite = { focus = BOS_contact_sanjak_representatives }
@@ -1218,8 +1218,39 @@ focus_tree = {
     }
 
     focus = {
+        id = BOS_integrate_montenegro
+        icon = GFX_focus_BOS_integrate_montenegro
+        x = 0
+        y = 1
+        prerequisite = { focus = BOS_demand_sanjak }
+        relative_position_id = BOS_demand_sanjak
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 4
+        }
+
+        available = {
+            owns_state = 105
+        }
+
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        completion_reward = {
+            country_event = { id = bosnia.204 }
+        }
+    }
+
+    focus = {
         id = BOS_receive_dalmation_representatives
-        icon = GFX_goal_generic_national_unity
+        icon = GFX_focus_BOS_receive_dalmation_representatives
         x = 1
         y = 1
         prerequisite = { focus = BOS_sanjak_declaration }
@@ -1248,7 +1279,7 @@ focus_tree = {
 
     focus = {
         id = BOS_support_dalmatia
-        icon = GFX_goal_generic_more_territorial_claims
+        icon = GFX_focus_BOS_support_dalmatia
         x = 0
         y = 1
         prerequisite = { focus = BOS_receive_dalmation_representatives }
@@ -1355,7 +1386,7 @@ focus_tree = {
 
     focus = {
         id = BOS_decide_dalmatias_fate
-        icon = GFX_goal_generic_national_unity
+        icon = GFX_focus_BOS_decide_dalmatias_fate
         x = 0
         y = 1
         prerequisite = { focus = BOS_support_dalmatia }
@@ -1381,6 +1412,37 @@ focus_tree = {
 
         completion_reward = {
             country_event = { id = bosnia.203 }
+        }
+    }
+
+    focus = {
+        id = BOS_restore_the_kingdom
+        icon = GFX_focus_BOS_restore_the_kingdom
+        x = -1
+        y = 1
+        prerequisite = { focus = BOS_integrate_montenegro }
+        prerequisite = { focus = BOS_decide_dalmatias_fate }
+        relative_position_id = BOS_decide_dalmatias_fate
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 4
+        }
+
+        available = {
+        }
+
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        completion_reward = {
+            every_owned_state = { add_core_of = ROOT }
+            set_cosmetic_tag = BOS_kingdom
         }
     }
 
@@ -1807,7 +1869,7 @@ focus_tree = {
         prerequisite = { focus = BOS_discredit_the_accords }
         mutually_exclusive = { focus = BOS_assist_the_partisans }
         relative_position_id = BOS_discredit_the_accords
-        x = 10
+        x = 9
         y = 1
 
         cost = 5
@@ -1843,7 +1905,7 @@ focus_tree = {
         prerequisite = { focus = BOS_bosna_zove }
         mutually_exclusive = { focus = BOS_ban_the_islamski_svijet }
         relative_position_id = BOS_bosna_zove
-        x = -4
+        x = 4
         y = 1
 
         cost = 5
@@ -1981,7 +2043,7 @@ focus_tree = {
         icon = GFX_focus_BOS_madrasa
         prerequisite = { focus = BOS_sharia_law_code }
         relative_position_id = BOS_sharia_law_code
-        x = -4
+        x = 4
         y = 1
 
         cost = 5
@@ -2509,7 +2571,7 @@ focus_tree = {
         prerequisite = { focus = BOS_bosna_zove }
         mutually_exclusive = { focus = BOS_endorse_the_islamski_svijet }
         relative_position_id = BOS_bosna_zove
-        x = 4
+        x = -4
         y = 1
 
         cost = 5
@@ -2702,7 +2764,7 @@ focus_tree = {
         icon = GFX_focus_BOS_bosniakism
         prerequisite = { focus = BOS_ban_foreign_propaganda }
         relative_position_id = BOS_ban_foreign_propaganda
-        x = 5
+        x = -4
         y = 1
 
         cost = 5
@@ -2734,7 +2796,7 @@ focus_tree = {
         icon = GFX_focus_chi_mission_to_germany
         prerequisite = { focus = BOS_ban_foreign_propaganda }
         relative_position_id = BOS_ban_foreign_propaganda
-        x = 0
+        x = 1
         y = 1
 
         cost = 5
@@ -2918,7 +2980,7 @@ focus_tree = {
         icon = GFX_goal_generic_scientific_exchange
         prerequisite = { focus = BOS_sign_the_tripartite_pact }
         relative_position_id = BOS_sign_the_tripartite_pact
-        x = -2
+        x = 0
         y = 1
 
         cost = 5
@@ -2990,10 +3052,10 @@ focus_tree = {
     focus = {
         id = BOS_balkan_domination
         icon = GFX_focus_generic_strike_at_democracy1
-        prerequisite = { focus = BOS_revenge_for_opression }
+        prerequisite = { focus = BOS_revenge_for_opression focus = BOS_restore_the_kingdom}
         relative_position_id = BOS_bosniakism
-        x = 0
-        y = 2
+        x = -4
+        y = 7
 
         cost = 5
 
@@ -3328,7 +3390,7 @@ focus_tree = {
     focus = {
         id = BOS_the_bosnian_industry
         icon = GFX_goal_generic_construct_civ_factory
-        x = -5
+        x = 5
         y = 0
 
         cost = 5
@@ -3880,7 +3942,7 @@ focus_tree = {
     focus = {
         id = BOS_form_arbih
         icon = GFX_focus_BOS_form_arbih
-        x = 85
+        x = 82
         y = 0
 
         cost = 5
@@ -4649,7 +4711,7 @@ focus_tree = {
         icon = GFX_focus_generic_join_comintern
         prerequisite = { focus = BOS_discredit_the_accords }
         mutually_exclusive = { focus = BOS_bosna_zove }
-        x = 70
+        x = 66
         y = 1
 
         cost = 5

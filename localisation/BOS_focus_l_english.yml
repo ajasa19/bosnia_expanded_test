@@ -291,6 +291,9 @@
  BOS_demand_sanjak:0 "Demand the Sanjak"
  BOS_demand_sanjak_desc:0 "Our claims to the Sanjak can no longer be ignored. We shall formally demand that Serbia surrender Montenegro's lands. Serbia must understand that rejecting our demands will mean war."
 
+ BOS_integrate_montenegro:0 "Integrate Montenegro"
+ BOS_integrate_montenegro_desc:0 "With Montenegro's lands secured, we can formally incorporate them into Bosnia."
+
  BOS_receive_dalmation_representatives:0 "Receive Dalmatian Representatives"
  BOS_receive_dalmation_representatives_desc:0 "Our success in Montenegro has inspired other movements seeking independence. Representatives of the Dalmatian separatists have approached us, hoping to secure Bosnian support for their planned uprising."
 
@@ -299,6 +302,9 @@
 
  BOS_decide_dalmatias_fate:0 "Decide Dalmatias Fate"
  BOS_decide_dalmatias_fate_desc:0 "With Croatia pushed back, Dalmatia stands free, but its future is still undecided. We can bind it to us as a loyal partner, or bring it fully into the Bosnian state."
+
+ BOS_restore_the_kingdom:0 "Restore the Kingdom of Bosnia"
+ BOS_restore_the_kingdom_desc:0 "With Bosnia's historic lands reunited, we can restore the Kingdom of Bosnia and once again take our place among Europe's monarchies."
 
  BOS_illyrian_awkaning:0 "Illyrian Awakening"
  BOS_illyrian_awkaning_desc:0 "The memory of ancient Illyria has endured through centuries of foreign rule. As nations rediscover their histories, we too must embrace our past. The Illyrian idea offers the foundation for a movement capable of uniting the peoples of our region."

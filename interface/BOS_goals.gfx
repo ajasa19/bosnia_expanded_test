@@ -234,5 +234,40 @@ spriteTypes = {
 	    name = "GFX_focus_BOS_form_illyria"
 		texturefile = "gfx/interface/goals/focus_BOS_form_illyria.dds"
     }
+
+    SpriteType = {
+        name = "GFX_focus_BOS_contact_sanjak_representatives"
+        texturefile = "gfx/interface/goals/focus_BOS_contact_sanjak_representatives.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_BOS_demand_sanjak"
+        texturefile = "gfx/interface/goals/focus_BOS_demand_sanjak.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_BOS_integrate_montenegro"
+        texturefile = "gfx/interface/goals/focus_BOS_integrate_montenegro.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_BOS_receive_dalmation_representatives"
+        texturefile = "gfx/interface/goals/focus_BOS_receive_dalmation_representatives.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_BOS_support_dalmatia"
+        texturefile = "gfx/interface/goals/focus_BOS_support_dalmatia.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_BOS_decide_dalmatias_fate"
+        texturefile = "gfx/interface/goals/focus_BOS_decide_dalmatias_fate.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_BOS_restore_the_kingdom"
+        texturefile = "gfx/interface/goals/focus_BOS_restore_the_kingdom.dds"
+    }
     
 }

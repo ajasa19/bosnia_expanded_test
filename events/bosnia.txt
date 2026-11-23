@@ -793,6 +793,29 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = bosnia.204
+    title = bosnia.204.t
+    desc = bosnia.204.d
+    picture = GFX_report_event_generic_handshake
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = bosnia.204.a
+        ai_chance = { base = 50 }
+        add_political_power = -300
+    }
+
+    option = {
+        name = bosnia.204.b
+        ai_chance = { base = 50 }
+        release_puppet = MNT
+    }
+
+}
   
     
 

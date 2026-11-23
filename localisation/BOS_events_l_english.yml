@@ -147,10 +147,15 @@
  bosnia.202.a:0 "Peace is worth the price."
  bosnia.202.b:0 "The Muslim's demands are ludicrous!" 
 
+ bosnia.204.t:0 "Montenegro's Integration"
+ bosnia.204.d:0 "Although the Bosniaks of Montenegro celebrate our arrival, the region remains politically unsettled, with much of its Orthodox population opposed to our rule. We must decide whether the price of maintaining direct control is worth paying, or whether we should allow the old authorities to govern the territory under our influence."
+ bosnia.204.a:0 "No price too high."
+ bosnia.204.b:0 "Let them govern with our guidance."
+
  bosnia.203.t:0 "The Future of Dalmatia"
- bosnia.203.d:0 "Dalmatia has secured its freedom with our help. But freedom comes at a cost, and the question is what price will the new leaders of Dalmatia pay for our past and future support."
- bosnia.203.a:0 "Dalmatia will be under Sarajevo's influence"
- bosnia.203.b:0 "Dalmatia will be integrated into Bosnia"
+ bosnia.203.d:0 "With our assistance, Dalmatia has secured its freedom. Yet independence comes at a price, and the question remains: what will its new leaders offer in return for our past and continued support? We must decide whether Dalmatia should remain independent under Sarajevo's influence or be fully integrated into Bosnia. The latter, however, is unlikely to be welcomed by the Dalmatian population, and imposing direct rule may provoke considerable resistance."
+ bosnia.203.a:0 "Let them govern with our guidance."
+ bosnia.203.b:0 "Dalmatia will be annexed."
 
  #News
 
