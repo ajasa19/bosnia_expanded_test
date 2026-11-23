@@ -825,7 +825,17 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
+            add_political_power = 100
             add_ideas = bosnian_pride
+            create_country_leader = {
+                name = "Safet-Beg Bašagić"
+                picture = "safet_basagic.dds"
+                expire = "1965.1.1"
+                ideology = conservatism
+                traits = {
+                    popular_figurehead
+                }
+            }
         }
     }
 
@@ -857,7 +867,7 @@ focus_tree = {
 
         completion_reward = {
             add_political_power = 100
-            add_stability = 0.05
+            add_stability = 0.10
         }
     }
 
@@ -929,7 +939,7 @@ focus_tree = {
         prerequisite = { focus = BOS_establish_old_connections }
         relative_position_id = BOS_establish_old_connections
 
-        cost = 5
+        cost = 10
 
         ai_will_do = {
             factor = 4
@@ -948,8 +958,8 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            add_stability = 0.05
-            add_war_support = 0.05
+            add_stability = 0.10
+            add_war_support = 0.10
         }
     }
 
@@ -1012,7 +1022,7 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            add_stability = 0.05
+            add_stability = 0.10
 
             if = {
                 limit = { country_exists = YUG }
@@ -1062,7 +1072,7 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            add_war_support = 0.05
+            add_war_support = 0.10
 
             if = {
                 limit = { country_exists = TUR }
@@ -1104,7 +1114,10 @@ focus_tree = {
         }
 
         bypass = {
-
+            OR = {
+                NOT = { country_exists = GER }
+                is_in_faction_with = GER
+            }
         }
 
         cancel_if_invalid = yes
@@ -1146,6 +1159,7 @@ focus_tree = {
 
         completion_reward = {
             add_state_core = 105
+            add_war_support = 0.10
         }
     }
 
@@ -1196,11 +1210,15 @@ focus_tree = {
         }
 
         available = {
-            country_exists = YUG
+            105 = {
+                NOT = { is_owned_by = ROOT }
+            }
         }
 
         bypass = {
-
+            105 = {
+                is_owned_by = ROOT
+            }
         }
 
         cancel_if_invalid = yes
@@ -1208,10 +1226,14 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            YUG = {
-                country_event = {
-                    id = bosnia.202
-                    hours = 1
+            105 = {
+                owner = {
+                    country_event = {
+                        id = bosnia.202
+                        hours = 1
+                        country = ROOT
+                        from = BOS
+                    }
                 }
             }
         }
@@ -1266,6 +1288,7 @@ focus_tree = {
         }
 
         bypass = {
+            owns_state = 103
         }
 
         cancel_if_invalid = yes
@@ -1299,6 +1322,7 @@ focus_tree = {
         }
 
         bypass = {
+            owns_state = 103
         }
 
         cancel_if_invalid = yes
@@ -1307,6 +1331,7 @@ focus_tree = {
 
         completion_reward = {
 
+            add_war_support = 0.10
             custom_effect_tooltip = BOS_dalmatia_independence_tt
 
             hidden_effect = {
@@ -1404,6 +1429,7 @@ focus_tree = {
         }
 
         bypass = {
+            owns_state = 103
         }
 
         cancel_if_invalid = yes
@@ -1412,6 +1438,7 @@ focus_tree = {
 
         completion_reward = {
             country_event = { id = bosnia.203 }
+            add_state_core = 103
         }
     }
 
@@ -1443,6 +1470,9 @@ focus_tree = {
         completion_reward = {
             every_owned_state = { add_core_of = ROOT }
             set_cosmetic_tag = BOS_kingdom
+            news_event = {
+                id = bosnia_news.4
+            }
         }
     }
 
@@ -1475,6 +1505,10 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
+            add_political_power = 100
+            BOS = {
+                add_ideas = illyrian_political_movement
+            }
             CRO = {
                 add_ideas = illyrian_political_movement
             }
@@ -1492,7 +1526,7 @@ focus_tree = {
         prerequisite = { focus = BOS_illyrian_awkaning }
         relative_position_id = BOS_illyrian_awkaning
 
-        cost = 5
+        cost = 10
 
         ai_will_do = {
             factor = 4
@@ -1502,7 +1536,6 @@ focus_tree = {
         }
 
         bypass = {
-
         }
 
         cancel_if_invalid = yes
@@ -1519,6 +1552,9 @@ focus_tree = {
             }
             SLV = {
                 add_ideas = illyrian_union_movement
+            }
+            news_event = {
+                id = bosnia_news.2
             }
         }
     }
@@ -1545,7 +1581,10 @@ focus_tree = {
         }
 
         bypass = {
-
+            OR = {
+                CRO = { is_in_faction_with = ROOT }
+                CRO = { is_subject_of = ROOT }
+            }
         }
 
         cancel_if_invalid = yes
@@ -1554,6 +1593,7 @@ focus_tree = {
 
         completion_reward = {
             add_to_faction = CRO
+            add_stability = 0.10
             hidden_effect = {
                 CRO = {
                     add_ai_strategy = {
@@ -1588,7 +1628,10 @@ focus_tree = {
         }
 
         bypass = {
-
+            OR = {
+                SLV = { is_in_faction_with = ROOT }
+                SLV = { is_subject_of = ROOT }
+            }
         }
 
         cancel_if_invalid = yes
@@ -1597,6 +1640,7 @@ focus_tree = {
 
         completion_reward = {
             add_to_faction = SLV
+            add_stability = 0.10
             hidden_effect = {
                 SLV = {
                     add_ai_strategy = {
@@ -1618,7 +1662,7 @@ focus_tree = {
         prerequisite = { focus = BOS_invite_croatia }
         relative_position_id = BOS_the_illyrian_union
 
-        cost = 5
+        cost = 10
 
         ai_will_do = {
             factor = 4
@@ -1636,7 +1680,8 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            add_stability = 0.1
+            add_war_support = 0.15
+            add_political_power = 150
             CRO = {
                 set_politics = {
                     ruling_party = neutrality
@@ -1777,7 +1822,7 @@ focus_tree = {
         prerequisite = { focus = BOS_invite_albania }
         relative_position_id = BOS_salona_conference
 
-        cost = 5
+        cost = 10
 
         ai_will_do = {
             factor = 4
@@ -1787,7 +1832,6 @@ focus_tree = {
         }
 
         bypass = {
-
         }
 
         cancel_if_invalid = yes
@@ -1828,6 +1872,10 @@ focus_tree = {
 
             every_owned_state = { add_core_of = ROOT }
             set_cosmetic_tag = BOS_illyria
+
+            news_event = {
+                id = bosnia_news.3
+            }
         }
     }
 
@@ -3057,7 +3105,7 @@ focus_tree = {
         x = -4
         y = 8
 
-        cost = 5
+        cost = 10
 
         ai_will_do = {
             factor = 4
