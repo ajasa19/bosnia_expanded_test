@@ -3055,7 +3055,7 @@ focus_tree = {
         prerequisite = { focus = BOS_revenge_for_opression focus = BOS_restore_the_kingdom}
         relative_position_id = BOS_bosniakism
         x = -4
-        y = 7
+        y = 8
 
         cost = 5
 
