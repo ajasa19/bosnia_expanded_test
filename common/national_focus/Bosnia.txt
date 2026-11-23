@@ -831,9 +831,9 @@ focus_tree = {
                 name = "Safet-Beg Bašagić"
                 picture = "safet_basagic.dds"
                 expire = "1965.1.1"
-                ideology = conservatism
+                ideology = oligarchism
                 traits = {
-                    popular_figurehead
+                    headstrong
                 }
             }
         }
@@ -1472,6 +1472,15 @@ focus_tree = {
             set_cosmetic_tag = BOS_kingdom
             news_event = {
                 id = bosnia_news.4
+            }
+            create_country_leader = {
+                name = "King Safet I of Bosnia"
+                picture = "king_safet_basagic.dds"
+                expire = "1965.1.1"
+                ideology = despotism
+                traits = {
+                    legitimate_heir
+                }
             }
         }
     }
