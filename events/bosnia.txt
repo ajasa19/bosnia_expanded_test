@@ -741,7 +741,7 @@ country_event = {
         name = bosnia.202.a
 
         ai_chance = {
-            factor = 0
+            factor = 20
         }
 
         FROM = {
@@ -753,7 +753,7 @@ country_event = {
         name = bosnia.202.b
 
         ai_chance = {
-            factor = 100
+            factor = 80
         }
 
         FROM = {
@@ -781,6 +781,7 @@ country_event = {
         ai_chance = { base = 50 }
         trigger = { has_global_event_target = BOS_dalmatia }
         puppet = event_target:BOS_dalmatia
+        add_stability = 0.15
     }
 
     option = {
@@ -791,6 +792,8 @@ country_event = {
             target = event_target:BOS_dalmatia
             transfer_troops = yes
         }
+        add_political_power = -200
+        add_stability = -0.15
     }
 }
 
@@ -806,13 +809,15 @@ country_event = {
     option = {
         name = bosnia.204.a
         ai_chance = { base = 50 }
-        add_political_power = -300
+        add_political_power = -200
+        add_stability = -0.15
     }
 
     option = {
         name = bosnia.204.b
         ai_chance = { base = 50 }
         release_puppet = MNT
+        add_stability = 0.15
     }
 
 }

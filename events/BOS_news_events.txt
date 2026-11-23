@@ -48,3 +48,48 @@ news_event = {
         trigger = { TAG = YUG }
     }
 }
+
+news_event = {
+    id = bosnia_news.2
+    title = bosnia_news.2.t
+    desc = bosnia_news.2.d
+    picture = GFX_news_event_generic
+
+    major = yes
+    is_triggered_only = yes
+
+    option = {
+        name = bosnia_news.2.a
+    }
+}
+
+# The formation of Illyria
+news_event = {
+    id = bosnia_news.3
+    title = bosnia_news.3.t
+    desc = bosnia_news.3.d
+    picture = GFX_news_event_generic
+
+    major = yes
+    is_triggered_only = yes
+
+    option = {
+        name = bosnia_news.3.a
+    }
+}
+
+
+# Restoration of the Kingdom of Bosnia
+news_event = {
+    id = bosnia_news.4
+    title = bosnia_news.4.t
+    desc = bosnia_news.4.d
+    picture = GFX_news_event_generic
+
+    major = yes
+    is_triggered_only = yes
+
+    option = {
+        name = bosnia_news.4.a
+    }
+}
