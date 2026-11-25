@@ -8,6 +8,21 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_news_event_kingdom_of_bosnia"
+		texturefile = "gfx/event_pictures/news_event_kingdom_of_bosnia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_form_illyria"
+		texturefile = "gfx/event_pictures/news_event_form_illyria.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_illyria_union"
+		texturefile = "gfx/event_pictures/news_event_illyria_union.dds"
+	}
+
+	spriteType = {
 		name = "GFX_news_event_fall_of_pparis"
 		texturefile = "gfx/event_pictures/news_event_fall_of_pparis.dds"
 	}

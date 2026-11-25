@@ -53,7 +53,7 @@ news_event = {
     id = bosnia_news.2
     title = bosnia_news.2.t
     desc = bosnia_news.2.d
-    picture = GFX_news_event_generic
+    picture = GFX_news_event_illyria_union
 
     major = yes
     is_triggered_only = yes
@@ -68,7 +68,7 @@ news_event = {
     id = bosnia_news.3
     title = bosnia_news.3.t
     desc = bosnia_news.3.d
-    picture = GFX_news_event_generic
+    picture = GFX_news_event_form_illyria
 
     major = yes
     is_triggered_only = yes
@@ -84,7 +84,7 @@ news_event = {
     id = bosnia_news.4
     title = bosnia_news.4.t
     desc = bosnia_news.4.d
-    picture = GFX_news_event_generic
+    picture = GFX_news_event_kingdom_of_bosnia
 
     major = yes
     is_triggered_only = yes
